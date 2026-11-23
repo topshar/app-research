@@ -1,0 +1,47 @@
+{
+  "app": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Create and manage Google Ads campaigns and data programmatically.",
+  "auth_methods": [
+    "oauth2",
+    "jwt"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can self-serve a developer token and Basic Access or test account access for free.",
+  "api_type": "soap",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/googleads/google-ads-mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Fully documented API with self-serve developer token, test accounts, and official MCP server support.",
+  "docs_url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "snippet": "Google Ads API utilizes the OAuth 2.0 protocol for authentication and authorization, allowing your app to access user accounts without handling login information."
+    },
+    {
+      "field": "auth",
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "snippet": "In addition to OAuth 2.0 credentials, a developer token is also required to make Google Ads API calls."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/googleads/google-ads-mcp",
+      "snippet": "This repo contains the source code for running an MCP server that interacts with the Google Ads API."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://developers.google.com/google-ads",
+      "snippet": "Use webhook to send data from Google Ads to your CRM system."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Google Ads API requires OAuth2 credentials, a Google Cloud project, and a Google Ads developer token. It also features an official open-source MCP server. [auto-flagged: no_evidence_for:access]"
+}

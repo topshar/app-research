@@ -1,0 +1,52 @@
+{
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "one_liner": "Task, project, and workflow management platform with an extensive REST API and official MCP server.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Free tier available with self-serve developer access and personal access tokens; paid plans unlock higher rate limits.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://www.speakeasy.com/product/mcp-gateway/catalog/asana",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Asana provides a fully documented REST API with self-serve personal access tokens and OAuth, plus an official MCP server.",
+  "docs_url": "https://developers.asana.com",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://developers.asana.com/docs/authentication",
+      "snippet": "PATs are generated in the developer console. See the PAT documentation for more information."
+    },
+    {
+      "field": "auth",
+      "url": "https://www.stitchflow.com/user-management/asana/api",
+      "snippet": "Asana's REST API (base URL: https://app.asana.com/api/1.0) supports OAuth 2.0 and Personal Access Tokens for auth."
+    },
+    {
+      "field": "access",
+      "url": "https://www.activepieces.com/blog/asana-api-guide-get-tasks-projects-and-users-in-2026",
+      "snippet": "Because Personal is free, you can build and test against the API at no cost"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://www.speakeasy.com/product/mcp-gateway/catalog/asana",
+      "snippet": "Asana MCP is the official Model Context Protocol server for Asana, with OAuth and tools that cover tasks, projects, goals, portfolios, and teams."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://www.stitchflow.com/user-management/asana/api",
+      "snippet": "Asana supports webhooks for resource-level events. Webhooks can be registered on workspaces, projects, tasks, and other resources."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:access, no_official_source:mcp]"
+}

@@ -1,0 +1,58 @@
+{
+  "app": "Pipedrive",
+  "category": "CRM and Sales",
+  "one_liner": "A sales pipeline CRM and developer platform offering a comprehensive REST API, webhooks, and OAuth 2.0/API key authentication.",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "bearer_token"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "API access is included on every paid and trial plan, and developers can sign up for a self-serve trial or create a developer account.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/Wirasm/pipedrive-mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Pipedrive offers a well-documented REST API, self-serve trial access, standard OAuth 2.0 and API token authentication, and robust developer capabilities.",
+  "docs_url": "https://developers.pipedrive.com/",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://www.pipedrive.com/en/features/crm-api",
+      "snippet": "Access to the Pipedrive API is only possible using the API key or an access token when using OAuth 2.0."
+    },
+    {
+      "field": "access",
+      "url": "https://www.pipedrive.com",
+      "snippet": "14-day free trial, no credit card required"
+    },
+    {
+      "field": "api_type",
+      "url": "https://pipeline.zoominfo.com/sales/pipedrive-api",
+      "snippet": "API type | REST over HTTPS, JSON responses, CORS-enabled"
+    },
+    {
+      "field": "webhooks",
+      "url": "https://pipeline.zoominfo.com/sales/pipedrive-api",
+      "snippet": "Webhooks | Yes, Webhooks v2 with event-based subscriptions across all core entities"
+    },
+    {
+      "field": "sandbox_or_test_env",
+      "url": "https://pipeline.zoominfo.com/sales/pipedrive-api",
+      "snippet": "Free developer sandbox account, separate from production"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/Wirasm/pipedrive-mcp",
+      "snippet": "A Model Control Protocol (MCP) server implementation for interacting with the Pipedrive CRM API."
+    }
+  ],
+  "confidence": 0.95,
+  "needs_human": false,
+  "agent_notes": "Community MCP servers exist on GitHub, and Pipedrive provides extensive REST APIs with API v1 and v2, supported by SDKs and developer docs."
+}

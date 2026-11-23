@@ -1,0 +1,48 @@
+{
+  "app": "BigCommerce",
+  "category": "Ecommerce",
+  "one_liner": "E-commerce platform and SaaS API for managing products, orders, customers, and store settings.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token",
+    "hmac_signature"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "Developers can sign up for a free trial store and generate self-serve API credentials or app-level credentials.",
+  "api_type": "mixed",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/isaacgounton/bigcommerce-api-mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "BigCommerce provides self-serve trial stores, fully documented REST and GraphQL APIs, and clear developer tooling.",
+  "docs_url": "https://developer.bigcommerce.com",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+      "snippet": "Most of our REST endpoints and GraphQL Admin API endpoints use the X-Auth-Token header to authenticate to BigCommerce servers."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "snippet": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+      "snippet": "OAuth API accounts can subscribe to real-time event notifications using BigCommerce’s webhooks."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/isaacgounton/bigcommerce-api-mcp",
+      "snippet": "BigCommerce MCP Server · GitHub"
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

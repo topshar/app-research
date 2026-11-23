@@ -1,0 +1,47 @@
+{
+  "app": "Close",
+  "category": "CRM and Sales",
+  "one_liner": "The CRM that sells with you, featuring built-in calling, email, SMS, automation, and AI agents.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "A paid Close subscription and account access are required to generate developer API keys and use the API.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://developer.close.com/mcp",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "Close provides fully documented REST APIs and developer tools, but requires a paid Close account to access and generate API credentials.",
+  "docs_url": "https://developer.close.com",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.close.com",
+      "snippet": "API keys for scripts or OAuth 2.0 for user-facing integrations."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.close.com/api/overview/api-key-authentication",
+      "snippet": "API keys can be created and managed in your Close account under Settings \u2192 Developer \u2192 API Keys."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://developer.close.com",
+      "snippet": "Webhooks & Events\n\nReal-time event notifications and a 30-day event log."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://developer.close.com",
+      "snippet": "MCP Server\n\nModel Context Protocol for AI agents."
+    }
+  ],
+  "confidence": 0.9,
+  "needs_human": false,
+  "agent_notes": "Close offers an official MCP server as well as comprehensive REST APIs, authenticated via API keys or OAuth 2.0."
+}

@@ -1,0 +1,44 @@
+{
+  "app": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Cloud data platform providing SQL APIs, REST APIs, Snowpark, and MCP server integration for data warehousing and AI workloads.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "Developers can sign up for a trial account on a self-serve basis to obtain API credentials.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/Snowflake-Labs/mcp",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "API access requires a Snowflake account, which transitions from self-serve trial to a paid plan.",
+  "docs_url": "https://docs.snowflake.com",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "snippet": "When you send a request, the request must include authentication information using either of the following:"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/Snowflake-Labs/mcp",
+      "snippet": "GitHub - Snowflake-Labs/mcp: MCP Server for Snowflake including Cortex AI, object management, SQL orchestration, semantic view consumption, and more"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.snowflake.com",
+      "snippet": "[Getting a Trial Account](/en/user-guide/admin-trial-account)"
+    }
+  ],
+  "confidence": 0.9,
+  "needs_human": false,
+  "agent_notes": ""
+}

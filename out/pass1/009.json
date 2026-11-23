@@ -1,0 +1,42 @@
+{
+  "app": "Copper",
+  "category": "CRM and Sales",
+  "one_liner": "CRM software for relationship-focused service businesses, built to work inside Google Workspace.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "A paid Copper account with API access enabled is required to generate API credentials.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": null,
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "API access requires a paid subscription plan, but self-serve API keys and OAuth can be generated directly in the app.",
+  "docs_url": "https://developer.copper.com/introduction/authentication.html",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://developer.copper.com/introduction/authentication.html",
+      "snippet": "There are two ways to access the Copper Developer API: API keys and OAuth2.0."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.nexla.com/user-guides/connectors/copper_api/copper_api_destination",
+      "snippet": "To obtain your API key, you need to have a Copper account with API access enabled."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://frontal.so/gtm-apis/crm-apis/copper-api-review",
+      "snippet": "Webhooks | Change notifications | Push instead of polling against the minute limit."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:access, no_evidence_for:mcp, mcp_claimed_without_url]"
+}

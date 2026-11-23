@@ -1,0 +1,47 @@
+{
+  "app": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "A programmatic advertising API (Marketing API) used to create, manage, and extract insights from Meta ad campaigns across Facebook, Instagram, and Messenger.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can create a free Meta for Developers account and obtain development-mode credentials instantly, though production use on client accounts requires App Review and Business Verification.",
+  "api_type": "graphql",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": false,
+  "mcp_status": "official",
+  "mcp_url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Meta provides fully self-serve developer access with official documentation, standard OAuth/token authentication, and an official MCP server.",
+  "docs_url": "https://developers.facebook.com/docs/marketing-apis",
+  "evidence": [
+    {
+      "field": "docs_url",
+      "url": "https://developers.facebook.com/docs/marketing-apis",
+      "snippet": "The Marketing API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies."
+    },
+    {
+      "field": "auth",
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+      "snippet": "Every Marketing API call requires an access token as a parameter."
+    },
+    {
+      "field": "access",
+      "url": "https://adlibrary.com/posts/meta-ads-api-integration-guide",
+      "snippet": "The entry point is Meta for Developers. You need an existing Facebook account to create a developer account — free and instant."
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+      "snippet": "The ads MCP server is a Meta-hosted Model Context Protocol server that lets you manage Meta ads directly from an AI agent."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:auth, no_official_source:access, no_official_source:mcp]"
+}

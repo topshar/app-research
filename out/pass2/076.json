@@ -1,0 +1,52 @@
+{
+  "app": "Monday.com",
+  "category": "Productivity and Project Management",
+  "one_liner": "Work OS platform with a GraphQL API, webhooks, app framework, and official MCP server for AI integrations.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can sign up for a free developer account or use plans supporting API access to obtain personal API tokens or configure OAuth.",
+  "api_type": "graphql",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/mondaycom/mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Monday.com provides self-serve credentials via free developer accounts or user profile settings, extensive GraphQL documentation, webhooks, and an official MCP server.",
+  "docs_url": "https://developer.monday.com/api-reference/docs/basics",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "snippet": "Personal API token from the monday.com developer settings, passed as the `Authorization` header value"
+    },
+    {
+      "field": "access",
+      "url": "https://developer.monday.com/api-reference/docs/basics",
+      "snippet": "For building and testing apps or API integrations without touching production data, use a free developer account."
+    },
+    {
+      "field": "api_type",
+      "url": "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+      "snippet": "Our API is built on GraphQL and will give you a ton of flexibility for accessing and changing information in your monday.com account."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/mondaycom/mcp",
+      "snippet": "GitHub - mondaycom/mcp: Enable AI agents to operate reliably within real workflows."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://developer.monday.com",
+      "snippet": "Trigger workflows from any monday action. Listen for real-time events and run your workflow the moment data changes."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:auth, no_official_source:access]"
+}

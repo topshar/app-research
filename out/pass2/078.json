@@ -1,0 +1,46 @@
+{
+  "app": "Coda",
+  "category": "Productivity and Project Management",
+  "one_liner": "A collaborative document workspace platform with a RESTful API for programmatically interacting with docs, pages, tables, and rows.",
+  "auth_methods": [
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "API access is available for free across both free and paid workspaces, and API tokens can be generated directly from account settings.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": "https://coda.io/apis/v1/openapi.json",
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/orellazri/coda-mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Coda offers a public REST API accessible with bearer tokens generated directly from user account settings, accompanied by an official OpenAPI spec.",
+  "docs_url": "https://coda.io/developers",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://apis.apievangelist.com/store/coda-account-api",
+      "snippet": "It accepts HTTP bearer tokens (UUID) (Bearer). By default, every request must be authenticated."
+    },
+    {
+      "field": "access",
+      "url": "https://coda.io/developers",
+      "snippet": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces."
+    },
+    {
+      "field": "openapi_spec_url",
+      "url": "https://coda.io/developers",
+      "snippet": "OpenAPI 3.0 spec - JSON"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/orellazri/coda-mcp",
+      "snippet": "This MCP server is not developed or maintained by Coda; it's a community-built project."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:auth]"
+}

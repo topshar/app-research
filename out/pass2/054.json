@@ -1,0 +1,58 @@
+{
+  "app": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Web scraping and data extraction API with AI agents and Model Context Protocol (MCP) support.",
+  "auth_methods": [
+    "api_key",
+    "bearer_token",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Free tier available instantly upon dashboard sign-up with 1,000 monthly tokens and no credit card required.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/mrscraper-com/mrscraper-mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "MrScraper offers a fully self-serve free tier, extensive API documentation, and an official MCP server with public SDKs and straightforward API token authentication.",
+  "docs_url": "https://docs.mrscraper.com",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "snippet": "Include your API token in the x-api-token HTTP header on every request"
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://github.com/mrscraper-com/mrscraper-mcp",
+      "snippet": "The hosted server supports browser sign-in through OAuth 2.1."
+    },
+    {
+      "field": "access",
+      "url": "https://mrscraper.com/pricing",
+      "snippet": "Scraper Free includes 1,000 MrScraper tokens every month at no cost - no credit card required."
+    },
+    {
+      "field": "api_type",
+      "url": "https://docs.mrscraper.com/docs/api/overview",
+      "snippet": "All API endpoints require authentication using an API token passed in the x-api-token header."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/mrscraper-com/mrscraper-mcp",
+      "snippet": "Official MrScraper MCP server: Scraper API for HTML, Markdown, and screenshots"
+    },
+    {
+      "field": "webhooks",
+      "url": "https://docs.mrscraper.com",
+      "snippet": "Send scraper results directly to external services through webhooks."
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": "The platform provides robust documentation, a clear developer portal, official SDKs, and an official MCP server."
+}

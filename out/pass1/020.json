@@ -1,0 +1,52 @@
+{
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer service and agentic commerce platform providing a REST API and webhook integrations for customer support workflows.",
+  "auth_methods": [
+    "bearer_token",
+    "basic"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "API access requires an active Gladly paid organization account and an agent user with the API User permission.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": "https://developer.gladly.com/rest",
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "community",
+  "mcp_url": "https://glama.ai/mcp/connectors/dev.cotlet/gladly/tools/gladly_apply_topics",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "Gladly provides public REST API documentation and sandbox environments, but requires a paid subscription and specific user permissions to generate functional credentials.",
+  "docs_url": "https://developer.gladly.com/rest",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.gladly.com/rest",
+      "snippet": "Gladly API uses token-based Basic Authentication. API tokens are associated with designated Gladly users."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.gladly.com/rest",
+      "snippet": "First, you'll need to set up an account with the necessary API permissions."
+    },
+    {
+      "field": "sandbox_or_test_env",
+      "url": "https://developer.gladly.com/rest",
+      "snippet": "Your sandbox environment is accessible at https://{organization}.gladly.qa"
+    },
+    {
+      "field": "webhooks",
+      "url": "https://www.getmacha.com/blog/gladly-api-explained",
+      "snippet": "Gladly's REST API reference groups its operations under 21 resources, from Agents and Answer Management to Topics and Webhooks."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://glama.ai/mcp/connectors/dev.cotlet/gladly/tools/gladly_apply_topics",
+      "snippet": "Gladly has a full REST API (version 1.0), but no official MCP server (checked 20 Oct 2026)."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Gladly provides complete REST API documentation and developer guides, authenticated via HTTP Basic Auth using an agent email and API token. [auto-flagged: no_official_source:mcp]"
+}

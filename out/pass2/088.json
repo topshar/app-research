@@ -1,0 +1,53 @@
+{
+  "app": "Brex",
+  "category": "Finance and Fintech",
+  "one_liner": "Unified spend platform with global corporate cards, expense management, reimbursements, travel, and bill pay with REST API and Model Context Protocol (MCP) server support.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token",
+    "jwt"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Brex customers can generate API tokens directly in their Brex dashboard or use self-serve developer access.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": "https://developer.brex.com/_spec/openapi/team_api.yaml",
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://api.brex.com/mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Brex provides documented REST APIs, OpenAPI specifications, and self-serve developer token generation alongside an official MCP server.",
+  "docs_url": "https://developer.brex.com/",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://www.brex.com/journal/building-the-brex-api",
+      "snippet": "Our APIs use OAuth for authentication and authorization."
+    },
+    {
+      "field": "access",
+      "url": "https://www.brex.com/journal/building-the-brex-api",
+      "snippet": "As a Brex customer, you can generate API tokens in your Brex dashboard to make API calls for your own account"
+    },
+    {
+      "field": "api_type",
+      "url": "https://developer.brex.com/",
+      "snippet": "Brex APIs use the REST architecture, are defined using the OpenAPI specification"
+    },
+    {
+      "field": "openapi_spec_url",
+      "url": "https://apitracker.io/a/brex",
+      "snippet": "https://developer.brex.com/_spec/openapi/team_api.yaml"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://www.scalekit.com/blog/brex-mcp-vs-api",
+      "snippet": "Brex hosts an official MCP server at https://api.brex.com/mcp, in beta"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:mcp]"
+}

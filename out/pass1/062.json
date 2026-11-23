@@ -1,0 +1,47 @@
+{
+  "app": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Cloud platform for static sites and Serverless functions with a comprehensive REST API and official MCP server.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can sign up for a free Hobby plan and generate API tokens or use self-serve OAuth without talking to sales.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://vercel.com/docs/mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Vercel provides a fully documented public REST API and official MCP server with self-serve signup.",
+  "docs_url": "https://vercel.com/docs/rest-api",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://vercel.com/docs/rest-api",
+      "snippet": "Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header: Authorization: Bearer"
+    },
+    {
+      "field": "api_type",
+      "url": "https://vercel.com/docs/rest-api",
+      "snippet": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://vercel.com/docs/mcp",
+      "snippet": "Yes. Vercel MCP is Vercel's official remote MCP server at and it authorizes clients with OAuth."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://vercel.com/docs/rest-api",
+      "snippet": "[Webhooks4 endpoints](/docs/rest-api/webhooks/get-a-list-of-webhooks)"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_evidence_for:access]"
+}

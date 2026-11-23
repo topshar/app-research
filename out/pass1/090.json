@@ -1,0 +1,61 @@
+{
+  "app": "PitchBook",
+  "category": "Finance and Fintech",
+  "one_liner": "Market intelligence platform providing data on private and public capital markets.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "PitchBook API access is a paid, contract-gated add-on and requires contacting the Direct Data team.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": false,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://premium.mcp.pitchbook.com/mcp",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "The API is fully functional via REST and an official MCP server, but requires a paid sales-led enterprise contract to obtain credentials.",
+  "docs_url": "https://dlthub.com/context/source/pitchbook-api",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.frontegg.com/agen-for-work/connectors/marketplace/pitchbook",
+      "snippet": "PitchBook authenticates API requests with a static API key, sent on every request as the Authorization: PB-Token header."
+    },
+    {
+      "field": "access",
+      "url": "https://dlthub.com/context/source/pitchbook-api",
+      "snippet": "Access to the PitchBook API is a paid, contract-gated add-on and is not available via a self-serve dashboard."
+    },
+    {
+      "field": "api_type",
+      "url": "https://dlthub.com/context/source/pitchbook-api",
+      "snippet": "PitchBook is a market intelligence platform providing a RESTful API for on-demand access to private and public market data"
+    },
+    {
+      "field": "sandbox_or_test_env",
+      "url": "https://developers.frontegg.com/agen-for-work/connectors/marketplace/pitchbook",
+      "snippet": "PitchBook also offers a test sandbox environment that uses the same base URL with a separate key."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://pipeline.zoominfo.com/sales/pitchbook-api-review",
+      "snippet": "Webhooks | Not supported. Scheduled data feed delivery is available"
+    },
+    {
+      "field": "mcp_url",
+      "url": "https://www.promptarmor.com/connectors/pitchbook-premium",
+      "snippet": "Server : premium.mcp.pitchbook.com/mcp"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://apigene.ai/mcp/official/pitchbook",
+      "snippet": "This official MCP server is maintained and verified by PitchBook, ensuring reliability, security, and up-to-date functionality."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Official MCP server requires premium PitchBook credentials. [auto-flagged: no_official_source:auth, no_official_source:access, no_official_source:mcp]"
+}

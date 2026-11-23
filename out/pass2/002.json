@@ -1,0 +1,42 @@
+{
+  "app": "HubSpot",
+  "category": "CRM and Sales",
+  "one_liner": "HubSpot is a customer platform connecting marketing, sales, service, and data tools with comprehensive REST APIs and MCP servers.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Free API access is available out of the box with self-serve account creation and no credit card required.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://developers.hubspot.com/ai-tools/mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "HubSpot provides fully documented REST APIs, official MCP servers, self-serve credentials, and a free permanent tier.",
+  "docs_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+      "snippet": "If you plan to distribute your app to multiple accounts (either through listing on the HubSpot Marketplace or by managing specific authorized accounts), your app must be built using OAuth authentication."
+    },
+    {
+      "field": "access",
+      "url": "https://frontal.so/gtm-apis/crm-apis/hubspot-api-review",
+      "snippet": "No credit card required"
+    },
+    {
+      "field": "mcp",
+      "url": "https://developers.hubspot.com/ai-tools/mcp",
+      "snippet": "HubSpot offers two distinct MCP (Model Context Protocol) servers \u2014 one for connecting any MCP-compatible AI tool or agent to your CRM, and one for building on the HubSpot Developer Platform."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:access]"
+}

@@ -1,0 +1,49 @@
+{
+  "app": "Twilio",
+  "category": "Communications and Messaging",
+  "one_liner": "Cloud communications platform for building SMS, voice, messaging, and authentication features into applications.",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "Sign up for a free self-serve account or trial to get credentials; paid usage requires a billing plan.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.twilio.com/docs",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Fully documented public REST APIs and SDKs with self-serve account creation and an official MCP server.",
+  "docs_url": "https://www.twilio.com/docs",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://www.twilio.com/docs/usage/api-security-reference-guide/secure-auth",
+      "snippet": "OAuth 2.0 \u2014 Recommended for new integrations"
+    },
+    {
+      "field": "auth",
+      "url": "https://www.twilio.com/docs/usage/api-security-reference-guide/secure-auth",
+      "snippet": "API Keys \u2014 Recommended for server-side apps"
+    },
+    {
+      "field": "access",
+      "url": "https://www.twilio.com",
+      "snippet": "Sign up for a free Twilio account and grab one of our official server-side SDKs to get started."
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.twilio.com/docs/ai/mcp",
+      "snippet": "The server is hosted by Twilio at `mcp.twilio.com/docs`\u2014point your IDE at the URL."
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

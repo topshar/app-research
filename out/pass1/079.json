@@ -1,0 +1,42 @@
+{
+  "app": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "one_liner": "Work management platform with a comprehensive REST API and official MCP server.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "Creating API tokens and accessing the API requires a Business, Enterprise, or Advanced Work Management plan.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "API and MCP server are fully documented and available, but require a paid Business or Enterprise subscription.",
+  "docs_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://www.smartsheet.com/content-center/managing-work/it-management/authentication-mastery-smartsheet-api",
+      "snippet": "Two auth methods, two use cases\n\nPersonal Access Tokens (PATs) are the right choice for internal tools"
+    },
+    {
+      "field": "access",
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+      "snippet": "Required plan: Business, Enterprise, or Advanced Work Management"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/smartsheet-platform/smar-mcp",
+      "snippet": "Smartsheet now provides an official MCP server with full support."
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

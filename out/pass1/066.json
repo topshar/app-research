@@ -1,0 +1,43 @@
+{
+  "app": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Leading graph database platform enabling developers to build applications powered by connected data with HTTP, Query, and Aura cloud APIs.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token",
+    "basic"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "AuraDB offers a free tier and self-serve plans with trial options, while advanced features require paid or enterprise plans.",
+  "api_type": "mixed",
+  "api_breadth": "broad",
+  "openapi_spec_url": "https://artifacts.apis.io/neo4j/openapi/neo4j-authentication-api-openapi.yml",
+  "webhooks": null,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/neo4j/mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Neo4j provides self-serve cloud tiers (AuraDB Free), official MCP servers, drivers, and documented REST/Query APIs.",
+  "docs_url": "https://neo4j.com/docs/api",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://neo4j.com/labs/agent-memory/reference/authentication",
+      "snippet": "API keys are prefixed `nams_` (legacy `gylrd_` keys are still accepted). Send the key as a Bearer token on every request"
+    },
+    {
+      "field": "access",
+      "url": "https://apis.io/providers/neo4j",
+      "snippet": "Neo4j publishes its prices; its AuraDB Free plan is $0 as of 2026-10-28."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/neo4j/mcp",
+      "snippet": "GitHub - neo4j/mcp: Neo4j official MCP Server · GitHub"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:access]"
+}

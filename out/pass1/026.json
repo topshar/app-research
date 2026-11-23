@@ -1,0 +1,54 @@
+{
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "one_liner": "Discord API and developer platform for building bots, applications, and integrations.",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "bearer_token",
+    "basic"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can create an application and get bot credentials self-serve for free through the Discord Developer Portal.",
+  "api_type": "mixed",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": false,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/SaseQ/discord-mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Discord provides extensive free, self-serve APIs and documentation for building applications and bots.",
+  "docs_url": "https://docs.discord.com/developers/docs/intro",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://docs.discord.com/developers/reference",
+      "snippet": "Using a bot token found on the Bot page within your app’s settings."
+    },
+    {
+      "field": "auth",
+      "url": "https://docs.discord.com/developers/reference",
+      "snippet": "Using an OAuth2 bearer token gained through the OAuth2 API."
+    },
+    {
+      "field": "auth",
+      "url": "https://docs.discord.com/developers/reference",
+      "snippet": "Using basic authentication with credentials as the client ID and client secret found on the OAuth2 page"
+    },
+    {
+      "field": "access",
+      "url": "https://www.activepieces.com/blog/discord-api-rate-limits-errors-and-auth-2026-guide",
+      "snippet": "You create an application in the Discord Developer Portal, add a bot, copy its token and invite it with OAuth2 scopes. No paid plan is required"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://www.strac.io/blog/discord-mcp-server",
+      "snippet": "Discord does not publish an official MCP server yet, so teams run community-built servers on top of the Discord API."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:access, no_official_source:mcp]"
+}

@@ -1,0 +1,47 @@
+{
+  "app": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Cloud database platform providing administrative APIs, SDKs, and developer tools to manage clusters and databases.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "MongoDB Atlas offers a free-forever tier (M0) and self-serve sign-up to obtain API credentials.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": "https://mongodb.com/docs/atlas/reference/api-resources-spec/v2",
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/mongodb-js/mongodb-mcp-server",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "MongoDB Atlas provides self-serve accounts with a free tier, fully documented REST APIs, Go SDKs, and an official MCP server.",
+  "docs_url": "https://www.mongodb.com/docs/atlas/api",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://www.mongodb.com/docs/atlas/api/api-authentication",
+      "snippet": "Service account access tokens (OAuth 2.0)\n\nAPI keys (HTTP Digest Authentication)"
+    },
+    {
+      "field": "access",
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access",
+      "snippet": "You have an Atlas account. To create one, see Create an Atlas Account."
+    },
+    {
+      "field": "api_type",
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access",
+      "snippet": "The Atlas Administration API follows the principles of the REST architectural style to expose a number of internal resources"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+      "snippet": "The Official MongoDB MCP Server."
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

@@ -1,0 +1,48 @@
+{
+  "app": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Error tracking and performance monitoring platform with a comprehensive web API and official MCP server.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Sentry provides a free developer plan with self-serve access to credentials, user tokens, and OAuth.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.sentry.dev",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Sentry offers public REST APIs and an official MCP server with self-serve developer access via a free tier.",
+  "docs_url": "https://docs.sentry.io/api",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://docs.sentry.io/api/auth",
+      "snippet": "Authentication tokens are passed using an auth header, and are used to authenticate as a user or organization account with the API."
+    },
+    {
+      "field": "auth",
+      "url": "https://docs.sentry.io/api/auth",
+      "snippet": "For third-party applications that need to access Sentry on behalf of users, Sentry supports OAuth2 with the authorization code grant type."
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.town.com/integrations/sentry",
+      "snippet": "The Sentry MCP is Sentry's hosted Model Context Protocol server at mcp.sentry.dev \u2014 the official integration surface Sentry maintains."
+    },
+    {
+      "field": "access",
+      "url": "https://sentry.io/pricing",
+      "snippet": "developer $0 Includes: One user, Error Monitoring and Tracing, 10 custom dashboards, MCP access"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:mcp]"
+}

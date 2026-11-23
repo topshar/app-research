@@ -1,0 +1,49 @@
+{
+  "app": "Telegram",
+  "category": "Communications and Messaging",
+  "one_liner": "Cloud-based messaging platform offering Bot API, MTProto API, Login/OIDC, and Gateway API for developers.",
+  "auth_methods": [
+    "bearer_token",
+    "basic",
+    "jwt",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can sign up for Telegram and immediately obtain tokens via BotFather or developer tools for free.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/sparfenyuk/mcp-telegram",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Telegram provides fully self-serve, free access to its Bot API, MTProto API, OIDC login, and Gateway API with documented credentials.",
+  "docs_url": "https://core.telegram.org",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://core.telegram.org/gateway/verification-tutorial",
+      "snippet": "In the HTTP header: Authorization: Bearer"
+    },
+    {
+      "field": "auth",
+      "url": "https://core.telegram.org/widgets/login",
+      "snippet": "POST https://oauth.telegram.org/token Content-Type: application/x-www-form-urlencoded Authorization: Basic"
+    },
+    {
+      "field": "access",
+      "url": "https://core.telegram.org",
+      "snippet": "You are welcome to use both APIs free of charge."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/sparfenyuk/mcp-telegram",
+      "snippet": "MCP server to work with Telegram through MTProto"
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": "Telegram offers multiple APIs (Bot API, MTProto, Gateway, OIDC Login). All core developer tools are self-serve and free."
+}

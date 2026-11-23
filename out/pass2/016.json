@@ -1,0 +1,41 @@
+{
+  "app": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "one_liner": "Help desk and call center software with ticketing, live chat, built-in call center, and API access.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "A self-serve free trial is available, and API access is included in subscriptions.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": null,
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "LiveAgent provides public REST APIs and a built-in MCP server, accessible via self-serve trial accounts and standard subscription plans.",
+  "docs_url": "https://support.liveagent.com/567924-Documentation",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://support.liveagent.com/741982-API-key",
+      "snippet": "Your API key has to be set in header of your requests:\ncurl --location --request GET 'https://your.ladesk.com/api/v3/tickets' \\\n --header 'apikey: 0865evv883j6auflvlt7zrwgqn32qo74'"
+    },
+    {
+      "field": "access",
+      "url": "https://www.liveagent.com/pricing",
+      "snippet": "LiveAgent offers three subscription plans (Small at $15/agent, Medium at $29/agent, and Large at $49/agent), and API and integrations are included in each subscription without any additional costs. A 30-day free trial is available for all subscriptions."
+    },
+    {
+      "field": "mcp",
+      "url": "https://support.liveagent.com/150554-AI-features",
+      "snippet": "LiveAgent exposes a built-in MCP server (Model Context Protocol) that lets you connect external AI tools \u2014 such as Claude Desktop, Cursor, claude.ai"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "LiveAgent provides API v3 and API v1 endpoints alongside an official built-in MCP server for AI tooling integrations. [auto-flagged: mcp_claimed_without_url]"
+}

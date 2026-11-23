@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+out/evidence/
+out/evidence2/
+out/pass1/*.err

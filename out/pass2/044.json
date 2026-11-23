@@ -1,0 +1,54 @@
+{
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "one_liner": "Develop personalized ecommerce experiences with B2C and B2B commerce APIs, SDKs, and developer tools.",
+  "auth_methods": [
+    "oauth2",
+    "jwt",
+    "bearer_token",
+    "basic"
+  ],
+  "access": "partner_gated",
+  "access_notes": "Salesforce Commerce Cloud requires an enterprise commercial relationship, partnership, or specific Salesforce instance access to obtain working API credentials.",
+  "api_type": "mixed",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp",
+  "verdict": "blocked",
+  "main_blocker": "partner_program",
+  "verdict_reason": "Salesforce Commerce Cloud requires existing enterprise licenses and account access through Salesforce Account Manager, making it gated for independent solo developers.",
+  "docs_url": "https://developer.salesforce.com/docs/commerce",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/oauth.html",
+      "snippet": "The OAuth 2.0 protocol is used for authentication and authorization where the shopping customer context provided by JWT doesn\u2019t fit."
+    },
+    {
+      "field": "access",
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/oauth.html",
+      "snippet": "All client applications that access the Open Commerce API must be registered through the Account Manager."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp",
+      "snippet": "Salesforce now offers an official, much more complete toolkit, and you should switch to the Agentic B2C Developer Toolkit."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://developer.salesforce.com/docs/commerce/retail-cloud/overview",
+      "snippet": "Extend your POS operations with comprehensive APIs, SPIs, and webhooks that enable seamless integration with external systems."
+    },
+    {
+      "field": "sandbox_or_test_env",
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/oauth.html",
+      "snippet": "On sandboxes you can use the demo client ID \u201c[your_own_client_id]\u201d with client password \u201c[your_own_client_id]\u201d."
+    }
+  ],
+  "confidence": 0.9,
+  "needs_human": false,
+  "agent_notes": "Salesforce Commerce Cloud (SFCC) provides rich documentation and an official MCP server (@salesforce/b2c-dx-mcp), but access to an actual instance requires enterprise provisioning via Salesforce Account Manager."
+}

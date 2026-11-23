@@ -1,0 +1,47 @@
+{
+  "app": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "An all-in-one platform for sales funnels, email marketing, online courses, and affiliate management.",
+  "auth_methods": [
+    "api_key",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can create an account on the free plan and generate public API keys instantly from the account settings.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Systeme.io provides a self-serve free tier, fully documented REST API endpoints, API keys generated in settings, and an official MCP server implementation.",
+  "docs_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "snippet": "API keys are unique identifiers that authenticate requests to our public API. They enable you to programmatically access and manage various resources on our platform."
+    },
+    {
+      "field": "access",
+      "url": "https://systeme.io/pricing",
+      "snippet": "The all-in-one Systeme.io platform offers a free plan and three paid plans: Startup, Webinar, and Unlimited."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+      "snippet": "For technical details, please refer to our official MCP documentation:"
+    },
+    {
+      "field": "webhooks",
+      "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "snippet": "Programmatically create new webhooks to receive real-time notifications, retrieve lists of your existing webhooks, and remove webhooks that are no longer needed."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:auth, no_official_source:access, no_official_source:mcp]"
+}

@@ -1,0 +1,41 @@
+{
+  "app": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "one_liner": "Command line tool for the Mermaid library that takes mermaid definition files as input and generates an SVG/PNG/PDF file as output.",
+  "auth_methods": [
+    "none"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "The Mermaid CLI is a free, open-source command-line tool available via npm.",
+  "api_type": "sdk_or_cli_only",
+  "api_breadth": "narrow",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/andrewginns/mermaid-mcp-server",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Mermaid CLI is an open-source command-line tool that can be installed freely via npm or Docker without authentication.",
+  "docs_url": "https://github.com/mermaid-js/mermaid-cli",
+  "evidence": [
+    {
+      "field": "access",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "snippet": "npm install -g @mermaid-js/mermaid-cli"
+    },
+    {
+      "field": "api_type",
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "snippet": "This is a command-line interface (CLI) for mermaid. It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/andrewginns/mermaid-mcp-server",
+      "snippet": "Python MCP Server abstracting the official mermaid-cli for ease of use"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Mermaid CLI is purely a CLI tool and local npm package. While there are various third-party MCP servers wrapping it, the tool itself has no hosted REST API and requires no credentials. [auto-flagged: no_evidence_for:auth, no_api_but_ready]"
+}

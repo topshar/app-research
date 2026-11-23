@@ -1,0 +1,42 @@
+{
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "one_liner": "Customer operations and helpdesk platform that brings teams and AI agents together across email, chat, and other channels.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "Developers can sign up for a trial or self-serve account to generate API tokens or set up OAuth.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": null,
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Front provides documented REST APIs with self-serve token generation and OAuth support, plus an official MCP server.",
+  "docs_url": "https://dev.frontapp.com/docs/welcome",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://dev.frontapp.com/docs/authentication",
+      "snippet": "The Core API uses Bearer tokens to authenticate its user."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://dev.frontapp.com/docs/authentication",
+      "snippet": "There are two ways to get a Bearer token — through API tokens in your settings or through an OAuth implementation."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://community.front.com/announcements-63/front-s-mcp-server-bring-front-into-your-ai-workflows-3958",
+      "snippet": "Front’s MCP server is here!"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Front offers core REST APIs using Bearer tokens via API settings or OAuth, and has an official MCP server. [auto-flagged: no_evidence_for:access, mcp_claimed_without_url]"
+}

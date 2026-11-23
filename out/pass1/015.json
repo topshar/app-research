@@ -1,0 +1,42 @@
+{
+  "app": "Pylon",
+  "category": "Support and Helpdesk",
+  "one_liner": "The Agentic Support Platform connecting humans and AI agents on customer issues, messaging, accounts, and tasks.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "Requires a Pylon account and dashboard access where an admin can generate an API token or authenticate via OAuth.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://mcp.usepylon.com",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "Pylon provides documented REST APIs and an official MCP server, but requires a paid subscription/account to access the dashboard and generate credentials.",
+  "docs_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+      "snippet": "The Pylon API uses Bearer authentication. This means you’ll need to pass your API token in the header of your request"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://www.scalekit.com/blog/pylon-mcp-vs-api",
+      "snippet": "The Pylon MCP Server went live in March 2026 at https://mcp.usepylon.com."
+    },
+    {
+      "field": "api_type",
+      "url": "https://www.scalekit.com/blog/pylon-mcp-vs-api",
+      "snippet": "The Pylon REST API is a bearer-authenticated interface at https://api.usepylon.com, spanning 22 documented resource groups."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Pylon provides both a REST API and an official hosted Model Context Protocol (MCP) server. [auto-flagged: no_evidence_for:access, no_official_source:mcp]"
+}

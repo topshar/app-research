@@ -1,0 +1,48 @@
+{
+  "app": "Fathom",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI meeting assistant that records, transcribes, highlights, and generates AI summaries from meetings.",
+  "auth_methods": [
+    "api_key",
+    "bearer_token",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "API access—keys and webhooks—are included on all plans and can be generated directly in User Settings.",
+  "api_type": "rest",
+  "api_breadth": "medium",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://developers.fathom.ai/mcp-docs",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Fathom provides self-serve API keys and bearer tokens through user settings, complete REST documentation, SDKs, and an official MCP server.",
+  "docs_url": "https://developers.fathom.ai",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://developers.fathom.ai/sdks/authentication",
+      "snippet": "Authenticate with the Fathom SDKs using API keys"
+    },
+    {
+      "field": "access",
+      "url": "https://developers.fathom.ai/faq",
+      "snippet": "Yes. API access—keys and webhooks— are included on all plans. Generate a key in User Settings → API Access."
+    },
+    {
+      "field": "api_type",
+      "url": "https://developers.fathom.ai/api-overview",
+      "snippet": "This documentation describes Fathom’s REST API."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://developers.fathom.ai/mcp-docs",
+      "snippet": "Fathom now offers an official MCP (Model Context Protocol) server"
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

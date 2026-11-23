@@ -1,0 +1,41 @@
+{
+  "app": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Hunt down social media accounts by username across social networks",
+  "auth_methods": [
+    "none"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Open source CLI tool, free and self-serve via GitHub.",
+  "api_type": "sdk_or_cli_only",
+  "api_breadth": "narrow",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/Burnsedia/sherlock-mcp",
+  "verdict": "not_an_api_product",
+  "main_blocker": "cli_not_api",
+  "verdict_reason": "Sherlock is an open-source CLI and Python tool for username OSINT rather than a hosted API service, though community MCP servers exist.",
+  "docs_url": "https://github.com/sherlock-project/sherlock",
+  "evidence": [
+    {
+      "field": "api_type",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "snippet": "sherlock user123"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/Burnsedia/sherlock-mcp",
+      "snippet": "Sherlock MCP Server: Find truth and counter propaganda through ethical OSINT."
+    },
+    {
+      "field": "access",
+      "url": "https://github.com/sherlock-project/sherlock",
+      "snippet": "pipx install sherlock-project"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Sherlock is primarily a CLI OSINT tool with no official vendor API, but community MCP integrations exist. [auto-flagged: no_evidence_for:auth]"
+}

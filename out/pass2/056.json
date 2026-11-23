@@ -1,0 +1,48 @@
+{
+  "app": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Web data API to search, scrape, crawl, map, and interact with websites, returning LLM-ready markdown or JSON.",
+  "auth_methods": [
+    "api_key",
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Free tier provides 1,000 credits/month with self-serve signup, requiring no credit card.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": false,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Firecrawl provides a public REST API, official MCP server, SDKs, and self-serve free tier credentials without requiring sales approval.",
+  "docs_url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+      "snippet": "Requests need an Authorization header with your API key, except on the keyless endpoints described below:"
+    },
+    {
+      "field": "auth",
+      "url": "https://docs.firecrawl.dev/oauth",
+      "snippet": "Send the access token as a bearer token, exactly like an API key"
+    },
+    {
+      "field": "access",
+      "url": "https://www.firecrawl.dev/pricing",
+      "snippet": "Firecrawl gives you 1,000 free credits every month, which covers about 1,000 pages, and no card is required."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "snippet": "Official Firecrawl server, the context API for AI agents: search, scrape, and interact with the web"
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

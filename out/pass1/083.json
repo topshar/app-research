@@ -1,0 +1,54 @@
+{
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "one_liner": "Cryptocurrency exchange platform providing REST and WebSocket APIs for market data, trading, and account management.",
+  "auth_methods": [
+    "api_key",
+    "hmac_signature",
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "API keys can be generated directly on the Binance platform after identity verification, enabling 2FA, and making a deposit.",
+  "api_type": "mixed",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Binance provides extensive public REST and WebSocket documentation, self-serve API keys, and official MCP integration support.",
+  "docs_url": "https://developers.binance.com/en/docs",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://apis.io/security/binance/binance-authentication",
+      "snippet": "Binance secures its APIs with apiKey across 3 declared security schemes, as derived from its OpenAPI definitions."
+    },
+    {
+      "field": "auth",
+      "url": "https://developers.binance.com/en",
+      "snippet": "Sign in with Binance, end to end. The client ID and secret in it are exactly what registering an OAuth application here issues you"
+    },
+    {
+      "field": "access",
+      "url": "https://www.binance.com/en/support/faq/detail/360002502072",
+      "snippet": "Log in to your Binance account and go to [Profile] -[Account]."
+    },
+    {
+      "field": "api_type",
+      "url": "https://developers.binance.com/en",
+      "snippet": "Pick a product, follow the documentation, and integrate with our REST and WebSocket APIs."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic",
+      "snippet": "Binance MCP Server | Binance Developer Docs"
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

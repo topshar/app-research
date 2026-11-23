@@ -1,0 +1,31 @@
+{
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "one_liner": "Plain is AI support infrastructure that enables B2B teams to build anything – no-code or all-code.",
+  "auth_methods": [
+    "unknown"
+  ],
+  "access": "unknown",
+  "access_notes": "unknown",
+  "api_type": "unknown",
+  "api_breadth": "unknown",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "none_found",
+  "mcp_url": null,
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "Plain offers an API-first approach to support infrastructure, but specific developer credential self-service and authentication documentation are gated behind product trials or commercial plans.",
+  "docs_url": "https://www.plain.com/docs/",
+  "evidence": [
+    {
+      "field": "verdict",
+      "url": "https://www.plain.com",
+      "snippet": "Plain is API-first, so everything you see in the product can be done programmatically."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "The public marketing site confirms an API-first platform, but direct public API documentation URLs and auth methods were not found in the search evidence. A human developer needs to verify the exact self-serve API access and auth schemes. [auto-flagged: no_evidence_for:auth, no_evidence_for:access, no_evidence_for:mcp]"
+}

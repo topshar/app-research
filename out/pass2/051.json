@@ -1,0 +1,42 @@
+{
+  "app": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "SEO and digital marketing data APIs for search engines, backlinks, keywords, and market research.",
+  "auth_methods": [
+    "basic",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Create a free account to receive trial credit and access dashboard API credentials instantly.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": "https://github.com/dataforseo/OpenApiDocumentation",
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://dataforseo.com/seo-mcp-server",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Self-serve credentials are available immediately upon registration with trial credits, fully documented REST APIs, and an official MCP server.",
+  "docs_url": "https://docs.dataforseo.com/v3/",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://docs.dataforseo.com/v3/auth",
+      "snippet": "DataForSEO is using the Basic Authentication, which makes it possible to call our APIs with almost any programming language"
+    },
+    {
+      "field": "access",
+      "url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+      "snippet": "Create a free account on our website. New accounts get a $1 trial credit"
+    },
+    {
+      "field": "mcp",
+      "url": "https://dataforseo.com/seo-mcp-server",
+      "snippet": "Add one entry to your MCP config running \u201cnpx -y dataforseo-mcp-server\u201d with your DataForSEO credentials"
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

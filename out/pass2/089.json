@@ -1,0 +1,46 @@
+{
+  "app": "Ramp",
+  "category": "Finance and Fintech",
+  "one_liner": "Corporate cards, travel and expense management, bill pay, and spend controls API.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Have a Ramp account? Create credentials and make your first API call.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": "https://docs.ramp.com/openapi/developer-api.json",
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/ramp-public/ramp_mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Ramp provides documented REST APIs with self-serve OAuth2 credentials and an official open-source MCP server.",
+  "docs_url": "https://docs.ramp.com",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "snippet": "Ramp uses OAuth 2.0. Your app gets an access token from `/developer/v1/token`, authenticating with its client ID and secret"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.ramp.com",
+      "snippet": "Have a Ramp account? Create credentials and make your first API call."
+    },
+    {
+      "field": "api_type",
+      "url": "https://docs.ramp.com",
+      "snippet": "Canonical OpenAPI schema for the Developer API: /openapi/developer-api.json"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/ramp-public/ramp_mcp",
+      "snippet": "A Model Context Protocol server for retrieving and analyzing data or running tasks for Ramp using Developer API"
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

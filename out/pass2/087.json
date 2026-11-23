@@ -1,0 +1,66 @@
+{
+  "app": "Xero",
+  "category": "Finance and Fintech",
+  "one_liner": "Cloud accounting software providing a robust REST API for invoices, contacts, bank transactions, and financial reporting.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "A developer account is free and self-serve, taking 30 seconds to create and providing access to create apps and use the Demo Company.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": "https://github.com/xeroapi/Xero-OpenAPI",
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/xeroapi/xero-mcp-server",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Xero provides a self-serve developer portal, free account sign-up, OpenAPI specs, official SDKs, and an official MCP server.",
+  "docs_url": "https://developer.xero.com/documentation/api/accounting/overview",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://www.apideck.com/blog/how-to-get-xero-api-key",
+      "snippet": "Note: Xero doesn't use traditional API keys. Instead, it uses OAuth 2.0 authentication with Client ID and Client Secret credentials."
+    },
+    {
+      "field": "access",
+      "url": "https://www.apideck.com/blog/how-to-get-xero-api-key",
+      "snippet": "Developer account (free, takes 30 seconds to create)"
+    },
+    {
+      "field": "api_type",
+      "url": "https://www.activepieces.com/blog/xero-api-setup-authentication-and-limits-2026",
+      "snippet": "The Xero API is an OAuth 2.0 REST API"
+    },
+    {
+      "field": "openapi_spec_url",
+      "url": "https://github.com/xeroapi",
+      "snippet": "Xero-OpenAPI Public\nAn OpenAPI description of the Xero API"
+    },
+    {
+      "field": "webhooks",
+      "url": "https://developer.xero.com/documentation/api/accounting/overview",
+      "snippet": "Webhooks"
+    },
+    {
+      "field": "sandbox_or_test_env",
+      "url": "https://www.apideck.com/blog/how-to-get-xero-api-key",
+      "snippet": "Xero has a Demo Company for testing. Use it."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://www.usecarly.com/blog/xero-mcp",
+      "snippet": "Yes \u2014 Xero has an official MCP server. It\u2019s published by XeroAPI"
+    },
+    {
+      "field": "mcp_url",
+      "url": "https://kipper.com/xero-mcp-guide",
+      "snippet": "Yes. Xero publishes the open-source XeroAPI/xero-mcp-server repository and the @xeroapi/xero-mcp-server npm package."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:auth, no_official_source:access, no_official_source:mcp]"
+}

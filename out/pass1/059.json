@@ -1,0 +1,41 @@
+{
+  "app": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Waterfall enrichment API powered by 30+ data vendors for B2B contacts, companies, and phone numbers.",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "approval_required",
+  "access_notes": "API access is available by approval through the website or by booking a call.",
+  "api_type": "rest",
+  "api_breadth": "medium",
+  "openapi_spec_url": "https://waterfall-io-public.s3.us-east-1.amazonaws.com/api_specs.yaml",
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "none_found",
+  "mcp_url": null,
+  "verdict": "ready_with_caveats",
+  "main_blocker": "app_review",
+  "verdict_reason": "API has documentation and standard REST endpoints with API key auth, but credentials require approval from their team.",
+  "docs_url": "https://docs.waterfall.io/v1/introduction",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://waterfall.mintlify.app/v1/authentication",
+      "snippet": "All requests are authenticated using x-api-key."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.waterfall.io/v1/faq",
+      "snippet": "API access is available by approval. Enter your work email on the Waterfall website to request a key, or book a call to discuss your workflow and pricing."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://github.com/Waterfall-io/api-skills/blob/master/skills/waterfall-direct-api/SKILL.md",
+      "snippet": "Webhook signing keys | GET /.well-known/jwks.json | sync, no auth | GA | reference/webhooks.md |"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:auth, no_official_source:access, no_evidence_for:mcp]"
+}

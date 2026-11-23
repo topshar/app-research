@@ -1,0 +1,52 @@
+{
+  "app": "Linear",
+  "category": "Productivity and Project Management",
+  "one_liner": "Linear provides a public GraphQL API for issue and workspace integrations, with personal API keys and OAuth2 authentication.",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can create personal API keys or OAuth apps directly in their account settings for free.",
+  "api_type": "graphql",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": false,
+  "mcp_status": "official",
+  "mcp_url": "https://linear.app/docs/mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Linear provides a public GraphQL API with self-serve personal API keys and OAuth2 authentication, plus an official MCP server.",
+  "docs_url": "https://linear.app/developers",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://linear.app/developers/graphql",
+      "snippet": "The Linear API supports personal API keys and OAuth2 authentication."
+    },
+    {
+      "field": "api_type",
+      "url": "https://linear.app/developers/graphql",
+      "snippet": "Linear’s public API is built using GraphQL."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://apitracker.io/a/linear-app",
+      "snippet": "Webhooks Supported"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://www.devtoolsdaily.com/directory/mcp-servers/linear-mcp",
+      "snippet": "Linear's official remote MCP server lets AI agents find, create, and update issues, projects, and comments in a Linear workspace."
+    },
+    {
+      "field": "access",
+      "url": "https://linear.app/developers/graphql",
+      "snippet": "For personal scripts API keys are the easiest way to access the API. Visit Security & access settings to create and manage them."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:mcp]"
+}

@@ -1,0 +1,672 @@
+[
+  {
+    "id": 1,
+    "app": "Salesforce",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:access",
+      "evidence_link_blocked:https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html:403",
+      "evidence_link_blocked:https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.html:403",
+      "evidence_link_blocked:https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html:403"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 2,
+    "app": "HubSpot",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access"
+    ],
+    "reresearched": true,
+    "fields_changed": [],
+    "pass2_issues": [
+      "agent_asked_for_human",
+      "no_official_source:access"
+    ]
+  },
+  {
+    "id": 3,
+    "app": "Pipedrive",
+    "pass1_issues": [],
+    "reresearched": false
+  },
+  {
+    "id": 4,
+    "app": "Attio",
+    "pass1_issues": [],
+    "reresearched": false
+  },
+  {
+    "id": 5,
+    "app": "Twenty",
+    "pass1_issues": [],
+    "reresearched": false
+  },
+  {
+    "id": 6,
+    "app": "Podio",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 7,
+    "app": "Zoho CRM",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:access",
+      "snippet_not_on_page:mcp:https://www.zoho.com/crm/developer/mcp.html:0.50"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 8,
+    "app": "Close",
+    "pass1_issues": [],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 9,
+    "app": "Copper",
+    "pass1_issues": [
+      "mcp_claimed_without_url",
+      "agent_asked_for_human",
+      "no_official_source:access",
+      "no_evidence_for:mcp",
+      "snippet_not_on_page:access:https://docs.nexla.com/user-guides/connectors/copper_api/copper_api_destination:0.11"
+    ],
+    "reresearched": true,
+    "fields_changed": [],
+    "pass2_issues": [
+      "mcp_claimed_without_url",
+      "agent_asked_for_human",
+      "no_official_source:access",
+      "no_evidence_for:mcp"
+    ]
+  },
+  {
+    "id": 10,
+    "app": "DealCloud",
+    "pass1_issues": [],
+    "reresearched": false
+  },
+  {
+    "id": 13,
+    "app": "Freshdesk",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 14,
+    "app": "Front",
+    "pass1_issues": [
+      "mcp_claimed_without_url",
+      "agent_asked_for_human",
+      "no_evidence_for:access"
+    ],
+    "reresearched": true,
+    "fields_changed": [],
+    "pass2_issues": []
+  },
+  {
+    "id": 15,
+    "app": "Pylon",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_evidence_for:access",
+      "no_official_source:mcp",
+      "mcp_url_dead:https://mcp.usepylon.com:401"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 16,
+    "app": "LiveAgent",
+    "pass1_issues": [
+      "mcp_claimed_without_url",
+      "agent_asked_for_human"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 17,
+    "app": "Plain",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_evidence_for:auth",
+      "no_evidence_for:access",
+      "no_evidence_for:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 19,
+    "app": "Gorgias",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 20,
+    "app": "Gladly",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:mcp",
+      "openapi_url_not_a_spec:https://developer.gladly.com/rest:200"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 22,
+    "app": "Twilio",
+    "pass1_issues": [
+      "mcp_url_dead:https://mcp.twilio.com/docs:405"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 23,
+    "app": "Zoho Cliq",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_evidence_for:access",
+      "snippet_not_on_page:auth:https://www.zoho.com/cliq/help/restapi/v3/oauth:0.50"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 25,
+    "app": "Pumble",
+    "pass1_issues": [
+      "evidence_link_dead:https://github.com/infralayers/pumble-mcp/blob/main/SPEC.md:503"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 26,
+    "app": "Discord",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:access",
+      "no_official_source:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 27,
+    "app": "Telegram",
+    "pass1_issues": [],
+    "reresearched": false
+  },
+  {
+    "id": 29,
+    "app": "Aircall",
+    "pass1_issues": [],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 30,
+    "app": "Vonage",
+    "pass1_issues": [],
+    "reresearched": false
+  },
+  {
+    "id": 31,
+    "app": "Google Ads",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_evidence_for:access"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 32,
+    "app": "Meta Ads",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access",
+      "no_official_source:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 33,
+    "app": "LinkedIn Ads",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access",
+      "no_official_source:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 36,
+    "app": "Klaviyo",
+    "pass1_issues": [
+      "openapi_url_not_a_spec:https://github.com/klaviyo/openapi:200"
+    ],
+    "reresearched": true,
+    "fields_changed": [],
+    "pass2_issues": [
+      "openapi_url_not_a_spec:https://github.com/klaviyo/openapi:200"
+    ]
+  },
+  {
+    "id": 37,
+    "app": "systeme.io",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access",
+      "no_official_source:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 43,
+    "app": "BigCommerce",
+    "pass1_issues": [],
+    "reresearched": true,
+    "fields_changed": [],
+    "pass2_issues": []
+  },
+  {
+    "id": 44,
+    "app": "Salesforce Commerce Cloud",
+    "pass1_issues": [
+      "evidence_link_blocked:https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/oauth.html:403",
+      "evidence_link_blocked:https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/oauth.html:403",
+      "snippet_not_on_page:mcp_status:https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp:0.58",
+      "evidence_link_blocked:https://developer.salesforce.com/docs/commerce/retail-cloud/overview:403",
+      "evidence_link_blocked:https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/oauth.html:403"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 46,
+    "app": "Squarespace",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 51,
+    "app": "DataForSEO",
+    "pass1_issues": [
+      "openapi_url_not_a_spec:https://github.com/dataforseo/OpenApiDocumentation:200"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 52,
+    "app": "SE Ranking",
+    "pass1_issues": [],
+    "reresearched": false
+  },
+  {
+    "id": 53,
+    "app": "Ahrefs",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:mcp",
+      "mcp_url_dead:https://api.ahrefs.com/mcp/mcp:405"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 54,
+    "app": "MrScraper",
+    "pass1_issues": [],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 56,
+    "app": "Firecrawl",
+    "pass1_issues": [],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 58,
+    "app": "Sherlock",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_evidence_for:auth"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 59,
+    "app": "Waterfall.io",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access",
+      "no_evidence_for:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 60,
+    "app": "Clay",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:access",
+      "no_official_source:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 62,
+    "app": "Vercel",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_evidence_for:access"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 63,
+    "app": "Netlify",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_evidence_for:access",
+      "openapi_url_not_a_spec:https://open-api.netlify.com:200"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 64,
+    "app": "Cloudflare",
+    "pass1_issues": [],
+    "reresearched": false
+  },
+  {
+    "id": 65,
+    "app": "Supabase",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 66,
+    "app": "Neo4j",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:access"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 67,
+    "app": "Snowflake",
+    "pass1_issues": [],
+    "reresearched": false
+  },
+  {
+    "id": 68,
+    "app": "MongoDB Atlas",
+    "pass1_issues": [
+      "openapi_url_not_a_spec:https://mongodb.com/docs/atlas/reference/api-resources-spec/v2:200"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 70,
+    "app": "Sentry",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 71,
+    "app": "Notion",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:access",
+      "snippet_not_on_page:webhooks:https://developers.notion.com:0.58"
+    ],
+    "reresearched": true,
+    "fields_changed": [
+      "auth_methods"
+    ],
+    "pass2_issues": [
+      "agent_asked_for_human",
+      "no_official_source:access",
+      "snippet_not_on_page:webhooks:https://developers.notion.com:0.58"
+    ]
+  },
+  {
+    "id": 73,
+    "app": "Linear",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 75,
+    "app": "Asana",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:access",
+      "no_official_source:mcp"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 76,
+    "app": "Monday.com",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access"
+    ],
+    "reresearched": true,
+    "fields_changed": [],
+    "pass2_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access"
+    ]
+  },
+  {
+    "id": 78,
+    "app": "Coda",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth"
+    ],
+    "reresearched": true,
+    "fields_changed": [],
+    "pass2_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth"
+    ]
+  },
+  {
+    "id": 79,
+    "app": "Smartsheet",
+    "pass1_issues": [],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 80,
+    "app": "Harvest",
+    "pass1_issues": [],
+    "reresearched": false
+  },
+  {
+    "id": 83,
+    "app": "Binance",
+    "pass1_issues": [
+      "snippet_not_on_page:auth:https://developers.binance.com/en:0.50",
+      "snippet_not_on_page:access:https://www.binance.com/en/support/faq/detail/360002502072:0.00",
+      "snippet_not_on_page:api_type:https://developers.binance.com/en:0.22",
+      "snippet_not_on_page:mcp_status:https://developers.binance.com/en/docs/agent-native/mcp-server/agentic:0.00"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 84,
+    "app": "Paygent Connect",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_evidence_for:auth"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 86,
+    "app": "QuickBooks",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 87,
+    "app": "Xero",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access",
+      "no_official_source:mcp",
+      "snippet_not_on_page:webhooks:https://developer.xero.com/documentation/api/accounting/overview:0.00",
+      "openapi_url_not_a_spec:https://github.com/xeroapi/Xero-OpenAPI:200"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 88,
+    "app": "Brex",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:mcp",
+      "mcp_url_dead:https://api.brex.com/mcp:401"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 89,
+    "app": "Ramp",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:mcp",
+      "snippet_not_on_page:auth:https://docs.ramp.com/developer-api/v1/authorization:0.57",
+      "snippet_not_on_page:access:https://docs.ramp.com:0.56",
+      "openapi_url_not_a_spec:https://docs.ramp.com/openapi/developer-api.json:200"
+    ],
+    "reresearched": true,
+    "fields_changed": [],
+    "pass2_issues": [
+      "snippet_not_on_page:auth:https://docs.ramp.com/developer-api/v1/authorization:0.57",
+      "snippet_not_on_page:access:https://docs.ramp.com:0.56",
+      "openapi_url_not_a_spec:https://docs.ramp.com/openapi/developer-api.json:200"
+    ]
+  },
+  {
+    "id": 90,
+    "app": "PitchBook",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access",
+      "no_official_source:mcp",
+      "evidence_link_dead:https://apigene.ai/mcp/official/pitchbook:402",
+      "mcp_url_dead:https://premium.mcp.pitchbook.com/mcp:401"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 91,
+    "app": "NotebookLM",
+    "pass1_issues": [
+      "agent_asked_for_human",
+      "no_official_source:auth",
+      "no_official_source:access"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  },
+  {
+    "id": 93,
+    "app": "Fathom",
+    "pass1_issues": [],
+    "reresearched": false
+  },
+  {
+    "id": 98,
+    "app": "Mermaid CLI",
+    "pass1_issues": [
+      "no_api_but_ready",
+      "agent_asked_for_human",
+      "no_evidence_for:auth"
+    ],
+    "reresearched": false,
+    "error": "Gemini still unavailable after 7 tries; rerun the command later"
+  }
+]

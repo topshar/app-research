@@ -1,0 +1,47 @@
+{
+  "app": "Twenty",
+  "category": "CRM and Sales",
+  "one_liner": "Open-source CRM with REST and GraphQL APIs generated from your workspace schema.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can self-host or use Twenty Cloud, and create API keys directly in the settings.",
+  "api_type": "mixed",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/Jdu278/twenty-mcp-server",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Twenty provides fully documented REST and GraphQL APIs with self-serve API key creation.",
+  "docs_url": "https://docs.twenty.com/developers/extend/api",
+  "evidence": [
+    {
+      "field": "api_type",
+      "url": "https://docs.twenty.com/developers/extend/api",
+      "snippet": "REST and GraphQL APIs generated from your workspace schema."
+    },
+    {
+      "field": "auth_methods",
+      "url": "https://docs.twenty.com/developers/extend/api",
+      "snippet": "Authorization: Bearer YOUR_API_KEYAuthorization: Bearer YOUR_API_KEY"
+    },
+    {
+      "field": "access",
+      "url": "https://docs.twenty.com/developers/extend/api",
+      "snippet": "Create an API key in Settings → Developers → API → + Create key."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/Jdu278/twenty-mcp-server",
+      "snippet": "An MCP server for integrating with Twenty CRM, providing access to Twenty's REST API through categorized tools."
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

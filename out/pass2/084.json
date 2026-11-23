@@ -1,0 +1,41 @@
+{
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "one_liner": "AI agent monetization, usage-based pricing, and cost tracking platform",
+  "auth_methods": [
+    "api_key"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "Self-serve signup available with free tier and paid plans.",
+  "api_type": "rest",
+  "api_breadth": "medium",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/samweiss6/paygent",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "The platform offers a self-serve developer experience with API keys and SDKs.",
+  "docs_url": "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+  "evidence": [
+    {
+      "field": "access",
+      "url": "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+      "snippet": "1. Create an account and get your API key"
+    },
+    {
+      "field": "verdict",
+      "url": "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+      "snippet": "1. Create an account and get your API key\n2. Quick Start \u2014 install SDK, create agent + customer, send first event"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/samweiss6/paygent",
+      "snippet": "GitHub - samweiss6/paygent: Self-hosted MCP server that lets AI agents pay with policy-limited single-use cards (test mode)"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Paygent (docs.withpaygent.com) provides AI agent usage metering and monetisation APIs. [auto-flagged: no_evidence_for:auth]"
+}

@@ -1,0 +1,47 @@
+{
+  "app": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Cloudflare developer platform and global network APIs for managing DNS, Workers, R2, and edge services.",
+  "auth_methods": [
+    "api_key",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can sign up for a free account and generate API tokens or global keys directly from the dashboard.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/cloudflare/mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Cloudflare provides fully self-serve API credentials, comprehensive REST endpoints, and official Model Context Protocol (MCP) servers.",
+  "docs_url": "https://developers.cloudflare.com/api",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/keys",
+      "snippet": "Global API key is the previous authorization scheme for interacting with the Cloudflare API. When possible, use API tokens instead of Global API key."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token",
+      "snippet": "From the Cloudflare dashboard ↗︎, go to My Profile > API Tokens for user tokens. For Account Tokens, go to Manage Account > API Tokens."
+    },
+    {
+      "field": "api_type",
+      "url": "https://developers.cloudflare.com/api",
+      "snippet": "API Reference"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/cloudflare/mcp",
+      "snippet": "GitHub - cloudflare/mcp: MCP server for the Cloudflare API · GitHub"
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

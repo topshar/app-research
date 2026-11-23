@@ -1,0 +1,52 @@
+{
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "one_liner": "All-in-one workspace for notes, docs, and project management with a comprehensive REST API and official MCP support.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "API access is self-serve on all Notion pricing tiers including the free plan, with optional security review required for public marketplace listings.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/makenotion/notion-mcp-server",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Notion provides self-serve credentials on all plans, robust REST API documentation, and an official MCP server.",
+  "docs_url": "https://developers.notion.com",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developers.notion.com/reference/authentication",
+      "snippet": "Bearer tokens are provided when you create an internal connection, create a personal access token, or complete the OAuth flow for a public connection."
+    },
+    {
+      "field": "access",
+      "url": "https://www.trycaddi.com/integrations/notion/api",
+      "snippet": "Self-serve for any Notion workspace user; no plan requirement is stated, but public connections need Notion security review before Marketplace listing."
+    },
+    {
+      "field": "api_type",
+      "url": "https://developers.notion.com",
+      "snippet": "With the REST API, you can read, create, and update nearly everything in a workspace \u2014 pages, databases, users, comments, and more."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://developers.notion.com",
+      "snippet": "Connections can subscribe to real-time events \u2014 like page updates, property changes, and new comments \u2014 via webhooks."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/makenotion/notion-mcp-server",
+      "snippet": "Official Notion MCP Server \u00b7 GitHub"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:access]"
+}

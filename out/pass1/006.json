@@ -1,0 +1,46 @@
+{
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "one_liner": "Unify and automate work with no-code tools, flexible workflows and customizable business solutions.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "The Podio API is available to use for both paid and free Podio accounts by generating an API key in settings.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": "https://www.activepieces.com/mcp/podio",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Podio provides a public REST API with self-serve API key generation and standard OAuth 2.0 flows available on both free and paid plans.",
+  "docs_url": "https://developers.podio.com",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://developers.podio.com/authentication",
+      "snippet": "The Podio API uses the OAuth2 protocol for authentication."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.podio.com/index/faq",
+      "snippet": "The Podio API is available to use for both paid and free Podio accounts. Both have full access to the API"
+    },
+    {
+      "field": "access",
+      "url": "https://developers.podio.com/api-key",
+      "snippet": "You just have to sign in or sign up with Podio, and go to the API key tab in your settings."
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.activepieces.com/mcp/podio",
+      "snippet": "Podio MCP server"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:mcp]"
+}

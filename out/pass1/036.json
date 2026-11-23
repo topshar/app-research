@@ -1,0 +1,47 @@
+{
+  "app": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "API and MCP server for e-commerce marketing, campaigns, flows, and customer profiles.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can create a free account and generate private API keys or set up OAuth integrations without paying or contacting sales.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": "https://github.com/klaviyo/openapi",
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://www.klaviyo.com/solutions/ai/klaviyo-mcp-server",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Klaviyo provides self-serve account creation, comprehensive REST APIs, official SDKs, OpenAPI specs, and an official MCP server.",
+  "docs_url": "https://developers.klaviyo.com",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://developers.klaviyo.com/en/reference/api_overview",
+      "snippet": "All /api endpoints use private API keys with API key scopes to authenticate requests."
+    },
+    {
+      "field": "auth",
+      "url": "https://developers.klaviyo.com/en/reference/api_overview",
+      "snippet": "If you are a tech partner integrating with Klaviyo, we recommend using OAuth to authenticate your app."
+    },
+    {
+      "field": "access",
+      "url": "https://developers.klaviyo.com",
+      "snippet": "Create apps and integrations using Klaviyo's API that help your business grow. Get started for free."
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.klaviyo.com/solutions/ai/klaviyo-mcp-server",
+      "snippet": "The Klaviyo MCP server is an authorized connection between your Klaviyo account and the AI agents your team uses."
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

@@ -1,0 +1,54 @@
+{
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "one_liner": "Helpdesk and customer service platform for e-commerce with a REST API for tickets, customers, and events.",
+  "auth_methods": [
+    "api_key",
+    "bearer_token",
+    "oauth2",
+    "basic"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "API credentials are available on all paid Helpdesk plans for account owners and admins.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "API access is available on any paid Helpdesk plan, but requires active subscription and admin rights to obtain credentials.",
+  "docs_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://www.getmacha.com/blog/how-to-use-the-gorgias-api",
+      "snippet": "Authentication has two modes and the choice is made for you by what you are building. A private app uses the API key over HTTP Basic, with your email as the username. A public app, meaning one you list for other Gorgias accounts, must use OAuth2."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+      "snippet": "- Available on all Helpdesk plans\n- The account owner and admins can access the API credentials and create API keys"
+    },
+    {
+      "field": "api_type",
+      "url": "https://www.ringly.io/blog/gorgias-developer",
+      "snippet": "Gorgias exposes an open REST API (the current version is V2). It lets you read and write almost everything in your helpdesk programmatically: tickets, customers, messages, events, tags, integrations, and the sidebar widgets your agents see."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://www.ringly.io/blog/gorgias-developer",
+      "snippet": "Most useful integrations are event-driven, and that's what webhooks are for. You set them up under Settings, Integrations, then HTTP, point them at a public endpoint you control, and pick the events you care about."
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+      "snippet": "An MCP server for interacting with the Gorgias helpdesk API. This server provides tools and resources for managing tickets, customers, and other Gorgias functionality."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Gorgias offers a robust REST API accessible on all paid plans via HTTP Basic auth (email + API key) for private apps, and OAuth2 for public apps. An unofficial community MCP server is available. [auto-flagged: no_official_source:auth]"
+}

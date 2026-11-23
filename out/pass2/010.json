@@ -1,0 +1,44 @@
+{
+  "app": "DealCloud",
+  "category": "CRM and Sales",
+  "one_liner": "Preeminent CRM, deal management and business development software for principal investing and M&A advisory professionals.",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "jwt"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "Requires a paid DealCloud subscription and an account provisioned with specific permissions/capabilities to generate API keys.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": false,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://api.docs.dealcloud.com/mcp",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "API and MCP endpoints are fully documented and self-service via profile generation once a paid DealCloud tenant subscription and appropriate permissions are active.",
+  "docs_url": "https://api.docs.dealcloud.com/docs/apikeys",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication",
+      "snippet": "| OAuth2 | Most REST APIs | `OAuth2Config` |\n| API Key | Simple APIs | `api_key` parameter |"
+    },
+    {
+      "field": "access",
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "snippet": "To enable API access, ensure the intended user is assigned to a user group with the appropriate permissions."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://api.docs.dealcloud.com/mcp",
+      "snippet": "# DealCloud MCP Server"
+    }
+  ],
+  "confidence": 0.9,
+  "needs_human": false,
+  "agent_notes": "DealCloud provides both a comprehensive REST API and an official MCP Server."
+}

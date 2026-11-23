@@ -1,0 +1,42 @@
+{
+  "app": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "SEO and digital marketing platform providing backlink, keyword, SERP, and site audit data via REST API and MCP server.",
+  "auth_methods": [
+    "bearer_token",
+    "oauth2"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "Ahrefs API and MCP access requires a paid subscription plan (Lite tier or higher).",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": false,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://api.ahrefs.com/mcp/mcp",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "API and MCP are fully documented and available self-serve, but require a paid Ahrefs subscription (Lite tier or higher).",
+  "docs_url": "https://docs.ahrefs.com",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+      "snippet": "Provide it in the Authorization header when making requests: `Authorization: Bearer YOUR_API_KEY`."
+    },
+    {
+      "field": "access",
+      "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+      "snippet": "Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://agenticskills.io/mcp/ahrefs",
+      "snippet": "Ahrefs' official remote MCP server delivers live SEO data \u2014 keyword research, competitor analysis, backlink profiles"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:mcp]"
+}

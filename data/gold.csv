@@ -1,0 +1,31 @@
+id,app,auth_methods,access,api_type,mcp_status,verdict,main_blocker,notes
+8,Close,api_key;oauth2,,rest,official,,,https://developer.close.com/api/overview.md ; https://developer.close.com/integrations.md (docs name both REST API and MCP server)
+9,Copper,api_key,trial_self_serve,rest,,ready_with_caveats,paid_plan,"https://developer.copper.com/introduction/authentication.html (API key + email headers). Access from 3rd-party docs only: n8n says Professional/Business plan needed; StackOne says 14-day trial includes API. OAuth for registered apps seen only on a 3rd-party page, so not labelled. | HUMAN-CONFIRMED: trial + paid plan"
+10,DealCloud,oauth2,,rest,official,,,https://api.docs.dealcloud.com/docs/token (OAuth2 client credentials) ; https://api.docs.dealcloud.com/mcp/authentication (vendor MCP docs)
+14,Front,bearer_token;oauth2,,rest,,,,https://dev.frontapp.com/docs/authentication (API tokens and OAuth; OAuth required for public integrations)
+18,Help Scout,oauth2,,rest,,,,https://developer.helpscout.com/mailbox-api/overview/authentication (Inbox API is OAuth2) ; https://developer.helpscout.com/llms.txt (separate Docs API uses an API key). Ambiguous because two APIs. | HUMAN-CONFIRMED: OAuth 2.0
+19,Gorgias,basic;oauth2,,rest,,,,"https://developers.gorgias.com/docs/access-tokens-api-keys (API key via HTTP Basic, private apps) ; https://developers.gorgias.com/docs/oauth2-bearer-token"
+23,Zoho Cliq,oauth2,,rest,,,,https://www.zoho.com/cliq/help/restapi/v2/introduction/
+28,WhatsApp Business,bearer_token,,rest,,,,https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started ; system user access token sent as Bearer. Business verification / App Review apply to scaling and partners.
+29,Aircall,basic;oauth2,partner_gated,rest,,,partner_program,https://developers.aircall.io/api-references (Basic for own account; OAuth credentials need a request form and marketplace listing for partners) | HUMAN-CONFIRMED partner-gated: OAuth needs form + marketplace listing; Basic keys are self-serve for own account
+32,Meta Ads,oauth2;bearer_token,,,official,,,"https://developers.facebook.com/docs/marketing-apis (docs list an Ads MCP Server). Auth page was not retrievable, so auth left blank. | HUMAN-CONFIRMED: OAuth 2.0 bearer access tokens"
+33,LinkedIn Ads,oauth2,approval_required,rest,,,app_review,"https://learn.microsoft.com/linkedin/marketing (links the OAuth 2.0 authorization code flow; has a Getting API Access page, gating not read) | HUMAN-CONFIRMED: gated"
+40,SendGrid,api_key,,rest,,,,https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication (API key sent as Bearer)
+43,BigCommerce,api_key;oauth2,,mixed,,,,https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts (X-Auth-Token access tokens; OAuth for apps; REST and GraphQL endpoints)
+45,Magento (Adobe Commerce),,,rest,,,,"https://developer.adobe.com/commerce/webapi/get-started/authentication/ (OAuth 1.0a integrations + tokens, PaaS). Left blank: page incomplete and enum has no oauth1. | Magento auth still unlabelled | HUMAN-CONFIRMED: REST API; auth method not stated, left blank"
+48,Gumroad,,,,,,,"NOT LABELLED: vendor docs could not be read in this session (page empty, JS-only, redirect or error)."
+51,DataForSEO,basic,,rest,,,,https://docs.dataforseo.com/v3/auth/ (Basic auth with API login/password)
+52,SE Ranking,,,,,,,"NOT LABELLED: vendor docs could not be read in this session (page empty, JS-only, redirect or error)."
+59,Waterfall.io,api_key,,rest,,,,"https://waterfall.io/ (API key in header; page shows Book a Call, key process not stated) | User guess only (no self-serve signup found); access left blank"
+67,Snowflake,jwt;oauth2;bearer_token,,rest,,,,"https://docs.snowflake.com/en/developer-guide/sql-api/authenticating (key-pair JWT, OAuth, programmatic access tokens for SQL API)"
+68,MongoDB Atlas,oauth2;other,,rest,,,,"https://www.mongodb.com/docs/atlas/api/api-authentication/ (service accounts OAuth2 client credentials; legacy API keys use HTTP Digest, mapped to other)"
+70,Sentry,bearer_token;oauth2,,rest,,,,https://docs.sentry.io/api/auth/
+71,Notion,bearer_token;oauth2,,rest,,,,https://developers.notion.com/docs/authorization (internal API token as Bearer; public OAuth 2.0)
+73,Linear,api_key;oauth2,,graphql,,,,https://linear.app/developers (GraphQL API; OAuth 2.0 or personal API keys)
+80,Harvest,bearer_token;oauth2,,rest,,,,https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/
+81,Stripe,api_key,free_self_serve,rest,,ready,none,https://docs.stripe.com/keys (secret/restricted keys; sandbox test keys available when you create an account)
+82,Plaid,api_key,,rest,official,,,https://plaid.com/docs/quickstart/ (client_id + secret; page links a Plaid MCP Server in Plaid's own GitHub repo) | HUMAN-CONFIRMED: MCP is official
+89,Ramp,,,,,,,"NOT LABELLED: vendor docs could not be read in this session (page empty, JS-only, redirect or error)."
+91,NotebookLM,,,,,,,"NOT LABELLED: vendor docs could not be read in this session (page empty, JS-only, redirect or error)."
+94,Consensus,,,,,,,"NOT LABELLED: vendor docs could not be read in this session (page empty, JS-only, redirect or error)."
+99,YouTube Transcript,api_key,free_self_serve,rest,official,ready,none,"https://transcriptapi.com/ (Bearer API key; 100 free credits, no card, self signup; MCP at transcriptapi.com/mcp)"

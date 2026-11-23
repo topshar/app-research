@@ -1,0 +1,43 @@
+{
+  "app": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "one_liner": "Cloud-based customer service software and helpdesk platform with a comprehensive REST API and MCP integration.",
+  "auth_methods": [
+    "api_key",
+    "basic",
+    "oauth2"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "API functionality and keys are available on self-serve trials and paid plans, but are explicitly unavailable on the free Sprout plan.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://www.freshworks.com/freshdesk/omni/mcp/",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "API access is fully self-serve via trial or paid plans, but strictly unavailable on the free Sprout plan.",
+  "docs_url": "https://developers.freshdesk.com/api",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key-",
+      "snippet": "If your account is on the Sprout plan, the API key and the API functionality will NOT be available."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://walma.ai/en/mcp-directory/freshdesk",
+      "snippet": "Freshworks runs its own MCP server for Freshdesk."
+    },
+    {
+      "field": "access",
+      "url": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key-",
+      "snippet": "If your account is on the Sprout plan, the API key and the API functionality will NOT be available."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Freshdesk provides robust REST APIs and an official MCP server. Sprout (free) plan blocks API keys, requiring a trial or paid tier. [auto-flagged: no_official_source:mcp]"
+}

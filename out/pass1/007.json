@@ -1,0 +1,47 @@
+{
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "one_liner": "Cloud-based customer relationship management platform with comprehensive sales automation and API capabilities.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "API access is included on Zoho CRM plans (including a 15-day free trial and a free tier), requiring self-serve registration in the Zoho API Console for OAuth credentials.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://www.zoho.com/crm/developer/mcp.html",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "API access is fully self-serve via OAuth 2.0 and includes free tiers/trials, but full production limits scale with paid editions and certain advanced features or modules require Enterprise/Ultimate plans.",
+  "docs_url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+      "snippet": "The Zoho CRM API uses the OAuth 2.0 protocol for authentication."
+    },
+    {
+      "field": "access",
+      "url": "https://pipeline.zoominfo.com/sales/zoho-crm-api",
+      "snippet": "API access is included on every Zoho CRM plan, including the permanent free tier (up to 3 users)."
+    },
+    {
+      "field": "access",
+      "url": "https://pipeline.zoominfo.com/sales/zoho-crm-api",
+      "snippet": "The 15-day free trial of the Enterprise plan gives full API access without a credit card."
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.zoho.com/crm/developer/mcp.html",
+      "snippet": "Zoho CRM provides these as pre-built MCP servers, so you don't need to build, host, or maintain any infrastructure."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Zoho CRM offers a robust REST API v8 and bulk operations protected by OAuth 2.0. Official MCP servers are also provided by Zoho. [auto-flagged: no_official_source:access]"
+}

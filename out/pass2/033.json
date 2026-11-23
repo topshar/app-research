@@ -1,0 +1,41 @@
+{
+  "app": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_liner": "Official Marketing API for managing LinkedIn advertising campaigns, reporting, matched audiences, and lead sync.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "approval_required",
+  "access_notes": "Access to the LinkedIn Marketing Developer Program requires partner application approval.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/danielpopamd/linkedin-ads-mcp",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "partner_program",
+  "verdict_reason": "The API is fully documented and free to call, but requires approval through the LinkedIn Marketing Developer Program.",
+  "docs_url": "https://learn.microsoft.com/linkedin/marketing",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://apis.io/security/linkedin-ads/linkedin-ads-authentication",
+      "snippet": "OAuth 2.0 three-legged (authorization code) flow \u2014 the flow every Marketing API call uses."
+    },
+    {
+      "field": "access",
+      "url": "https://www.blotato.com/blog/linkedin-api-pricing",
+      "snippet": "The official getting-access doc describes MDP as partner-application-gated without listing a dollar amount"
+    },
+    {
+      "field": "mcp",
+      "url": "https://adplug.app/best-linkedin-ads-mcp-servers",
+      "snippet": "As of September 2026 LinkedIn has not published an MCP server for Ads or for anything else."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:auth, no_official_source:access, no_official_source:mcp]"
+}

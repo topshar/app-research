@@ -1,0 +1,46 @@
+{
+  "app": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "one_liner": "AI research and note-taking assistant by Google that provides grounded, citation-backed responses and audio summaries from uploaded sources.",
+  "auth_methods": [
+    "bearer_token"
+  ],
+  "access": "approval_required",
+  "access_notes": "Requires Gemini Notebook Enterprise subscription and admin-assigned user licenses and IAM roles.",
+  "api_type": "rest",
+  "api_breadth": "narrow",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/PleasePrompto/notebooklm-mcp",
+  "verdict": "blocked",
+  "main_blocker": "enterprise_only",
+  "verdict_reason": "NotebookLM's programmatic API access is restricted to Gemini Notebook Enterprise subscriptions via Google Cloud, requiring organizational licensing and IAM role assignments.",
+  "docs_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "snippet": "curl -X POST -H \"Authorization: Bearer $(gcloud auth print-access-token)\""
+    },
+    {
+      "field": "access",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "snippet": "Get licenses for Gemini Notebook Enterprise and assign a license to your user account."
+    },
+    {
+      "field": "api_type",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "snippet": "The projects.locations.notebooks REST API methods on this page require an authenticated user account"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/PleasePrompto/notebooklm-mcp",
+      "snippet": "GitHub - PleasePrompto/notebooklm-mcp: MCP server for NotebookLM"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Google renamed NotebookLM to Gemini Notebook / Gemini Notebook Enterprise for cloud enterprise users. [auto-flagged: no_official_source:auth, no_official_source:access]"
+}

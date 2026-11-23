@@ -1,0 +1,320 @@
+{
+  "pass1": {
+    "accuracy": {
+      "auth_methods": 0.444,
+      "access": 0.333,
+      "api_type": 1.0,
+      "mcp_status": 1.0,
+      "verdict": 1.0,
+      "main_blocker": 0.333,
+      "overall": 0.689
+    },
+    "misses": [
+      {
+        "id": "9",
+        "app": "Copper",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "oauth2"
+        ],
+        "human": "api_key",
+        "note": "https://developer.copper.com/introduction/authentication.html (API key + email headers). Access from 3rd-party docs only: n8n says Professional/Business plan needed; StackOne says 14-day trial includes API. OAuth for registered apps seen only on a 3rd-party page, so not labelled. | HUMAN-CONFIRMED: trial + paid plan"
+      },
+      {
+        "id": "9",
+        "app": "Copper",
+        "field": "access",
+        "agent": "paid_plan_required",
+        "human": "trial_self_serve",
+        "note": "https://developer.copper.com/introduction/authentication.html (API key + email headers). Access from 3rd-party docs only: n8n says Professional/Business plan needed; StackOne says 14-day trial includes API. OAuth for registered apps seen only on a 3rd-party page, so not labelled. | HUMAN-CONFIRMED: trial + paid plan"
+      },
+      {
+        "id": "10",
+        "app": "DealCloud",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "basic",
+          "jwt",
+          "oauth2"
+        ],
+        "human": "oauth2",
+        "note": "https://api.docs.dealcloud.com/docs/token (OAuth2 client credentials) ; https://api.docs.dealcloud.com/mcp/authentication (vendor MCP docs)"
+      },
+      {
+        "id": "19",
+        "app": "Gorgias",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "basic",
+          "bearer_token",
+          "oauth2"
+        ],
+        "human": "basic;oauth2",
+        "note": "https://developers.gorgias.com/docs/access-tokens-api-keys (API key via HTTP Basic, private apps) ; https://developers.gorgias.com/docs/oauth2-bearer-token"
+      },
+      {
+        "id": "29",
+        "app": "Aircall",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "basic",
+          "oauth2"
+        ],
+        "human": "basic;oauth2",
+        "note": "https://developers.aircall.io/api-references (Basic for own account; OAuth credentials need a request form and marketplace listing for partners) | HUMAN-CONFIRMED partner-gated: OAuth needs form + marketplace listing; Basic keys are self-serve for own account"
+      },
+      {
+        "id": "29",
+        "app": "Aircall",
+        "field": "access",
+        "agent": "paid_plan_required",
+        "human": "partner_gated",
+        "note": "https://developers.aircall.io/api-references (Basic for own account; OAuth credentials need a request form and marketplace listing for partners) | HUMAN-CONFIRMED partner-gated: OAuth needs form + marketplace listing; Basic keys are self-serve for own account"
+      },
+      {
+        "id": "29",
+        "app": "Aircall",
+        "field": "main_blocker",
+        "agent": "paid_plan",
+        "human": "partner_program",
+        "note": "https://developers.aircall.io/api-references (Basic for own account; OAuth credentials need a request form and marketplace listing for partners) | HUMAN-CONFIRMED partner-gated: OAuth needs form + marketplace listing; Basic keys are self-serve for own account"
+      },
+      {
+        "id": "33",
+        "app": "LinkedIn Ads",
+        "field": "main_blocker",
+        "agent": "partner_program",
+        "human": "app_review",
+        "note": "https://learn.microsoft.com/linkedin/marketing (links the OAuth 2.0 authorization code flow; has a Getting API Access page, gating not read) | HUMAN-CONFIRMED: gated"
+      },
+      {
+        "id": "43",
+        "app": "BigCommerce",
+        "field": "auth_methods",
+        "agent": [
+          "bearer_token",
+          "hmac_signature",
+          "oauth2"
+        ],
+        "human": "api_key;oauth2",
+        "note": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts (X-Auth-Token access tokens; OAuth for apps; REST and GraphQL endpoints)"
+      },
+      {
+        "id": "51",
+        "app": "DataForSEO",
+        "field": "auth_methods",
+        "agent": [
+          "basic",
+          "oauth2"
+        ],
+        "human": "basic",
+        "note": "https://docs.dataforseo.com/v3/auth/ (Basic auth with API login/password)"
+      },
+      {
+        "id": "67",
+        "app": "Snowflake",
+        "field": "auth_methods",
+        "agent": [
+          "bearer_token",
+          "jwt",
+          "oauth2",
+          "other"
+        ],
+        "human": "jwt;oauth2;bearer_token",
+        "note": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating (key-pair JWT, OAuth, programmatic access tokens for SQL API)"
+      },
+      {
+        "id": "68",
+        "app": "MongoDB Atlas",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "oauth2"
+        ],
+        "human": "oauth2;other",
+        "note": "https://www.mongodb.com/docs/atlas/api/api-authentication/ (service accounts OAuth2 client credentials; legacy API keys use HTTP Digest, mapped to other)"
+      },
+      {
+        "id": "70",
+        "app": "Sentry",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "bearer_token",
+          "oauth2"
+        ],
+        "human": "bearer_token;oauth2",
+        "note": "https://docs.sentry.io/api/auth/"
+      },
+      {
+        "id": "71",
+        "app": "Notion",
+        "field": "auth_methods",
+        "agent": [
+          "basic",
+          "bearer_token",
+          "oauth2"
+        ],
+        "human": "bearer_token;oauth2",
+        "note": "https://developers.notion.com/docs/authorization (internal API token as Bearer; public OAuth 2.0)"
+      }
+    ]
+  },
+  "pass2": {
+    "accuracy": {
+      "auth_methods": 0.5,
+      "access": 0.333,
+      "api_type": 1.0,
+      "mcp_status": 1.0,
+      "verdict": 1.0,
+      "main_blocker": 0.333,
+      "overall": 0.711
+    },
+    "misses": [
+      {
+        "id": "9",
+        "app": "Copper",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "oauth2"
+        ],
+        "human": "api_key",
+        "note": "https://developer.copper.com/introduction/authentication.html (API key + email headers). Access from 3rd-party docs only: n8n says Professional/Business plan needed; StackOne says 14-day trial includes API. OAuth for registered apps seen only on a 3rd-party page, so not labelled. | HUMAN-CONFIRMED: trial + paid plan"
+      },
+      {
+        "id": "9",
+        "app": "Copper",
+        "field": "access",
+        "agent": "paid_plan_required",
+        "human": "trial_self_serve",
+        "note": "https://developer.copper.com/introduction/authentication.html (API key + email headers). Access from 3rd-party docs only: n8n says Professional/Business plan needed; StackOne says 14-day trial includes API. OAuth for registered apps seen only on a 3rd-party page, so not labelled. | HUMAN-CONFIRMED: trial + paid plan"
+      },
+      {
+        "id": "10",
+        "app": "DealCloud",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "basic",
+          "jwt",
+          "oauth2"
+        ],
+        "human": "oauth2",
+        "note": "https://api.docs.dealcloud.com/docs/token (OAuth2 client credentials) ; https://api.docs.dealcloud.com/mcp/authentication (vendor MCP docs)"
+      },
+      {
+        "id": "19",
+        "app": "Gorgias",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "basic",
+          "bearer_token",
+          "oauth2"
+        ],
+        "human": "basic;oauth2",
+        "note": "https://developers.gorgias.com/docs/access-tokens-api-keys (API key via HTTP Basic, private apps) ; https://developers.gorgias.com/docs/oauth2-bearer-token"
+      },
+      {
+        "id": "29",
+        "app": "Aircall",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "basic",
+          "oauth2"
+        ],
+        "human": "basic;oauth2",
+        "note": "https://developers.aircall.io/api-references (Basic for own account; OAuth credentials need a request form and marketplace listing for partners) | HUMAN-CONFIRMED partner-gated: OAuth needs form + marketplace listing; Basic keys are self-serve for own account"
+      },
+      {
+        "id": "29",
+        "app": "Aircall",
+        "field": "access",
+        "agent": "paid_plan_required",
+        "human": "partner_gated",
+        "note": "https://developers.aircall.io/api-references (Basic for own account; OAuth credentials need a request form and marketplace listing for partners) | HUMAN-CONFIRMED partner-gated: OAuth needs form + marketplace listing; Basic keys are self-serve for own account"
+      },
+      {
+        "id": "29",
+        "app": "Aircall",
+        "field": "main_blocker",
+        "agent": "paid_plan",
+        "human": "partner_program",
+        "note": "https://developers.aircall.io/api-references (Basic for own account; OAuth credentials need a request form and marketplace listing for partners) | HUMAN-CONFIRMED partner-gated: OAuth needs form + marketplace listing; Basic keys are self-serve for own account"
+      },
+      {
+        "id": "33",
+        "app": "LinkedIn Ads",
+        "field": "main_blocker",
+        "agent": "partner_program",
+        "human": "app_review",
+        "note": "https://learn.microsoft.com/linkedin/marketing (links the OAuth 2.0 authorization code flow; has a Getting API Access page, gating not read) | HUMAN-CONFIRMED: gated"
+      },
+      {
+        "id": "43",
+        "app": "BigCommerce",
+        "field": "auth_methods",
+        "agent": [
+          "bearer_token",
+          "hmac_signature",
+          "oauth2"
+        ],
+        "human": "api_key;oauth2",
+        "note": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts (X-Auth-Token access tokens; OAuth for apps; REST and GraphQL endpoints)"
+      },
+      {
+        "id": "51",
+        "app": "DataForSEO",
+        "field": "auth_methods",
+        "agent": [
+          "basic",
+          "oauth2"
+        ],
+        "human": "basic",
+        "note": "https://docs.dataforseo.com/v3/auth/ (Basic auth with API login/password)"
+      },
+      {
+        "id": "67",
+        "app": "Snowflake",
+        "field": "auth_methods",
+        "agent": [
+          "bearer_token",
+          "jwt",
+          "oauth2",
+          "other"
+        ],
+        "human": "jwt;oauth2;bearer_token",
+        "note": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating (key-pair JWT, OAuth, programmatic access tokens for SQL API)"
+      },
+      {
+        "id": "68",
+        "app": "MongoDB Atlas",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "oauth2"
+        ],
+        "human": "oauth2;other",
+        "note": "https://www.mongodb.com/docs/atlas/api/api-authentication/ (service accounts OAuth2 client credentials; legacy API keys use HTTP Digest, mapped to other)"
+      },
+      {
+        "id": "70",
+        "app": "Sentry",
+        "field": "auth_methods",
+        "agent": [
+          "api_key",
+          "bearer_token",
+          "oauth2"
+        ],
+        "human": "bearer_token;oauth2",
+        "note": "https://docs.sentry.io/api/auth/"
+      }
+    ]
+  }
+}

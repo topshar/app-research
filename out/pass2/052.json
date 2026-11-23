@@ -1,0 +1,47 @@
+{
+  "app": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "SEO and AI visibility data platform providing REST APIs and an official MCP server for rank tracking and search intelligence.",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "API access requires an active SE Ranking subscription or API add-on/pay-as-you-go deposit.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://seranking.com/api/integrations/mcp",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "API keys are self-serve and instantly issued upon signing up and confirming email / purchasing a plan, but require a paid subscription or add-on/wallet deposit to execute calls.",
+  "docs_url": "https://seranking.com/api/data/getting-started",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://seranking.com/api/se-visible/getting-started",
+      "snippet": "Every request must be authenticated with your SE Ranking API key. Authentication is identical to the Data API and Project API: you can send the key in an Authorization header or as an apikey query parameter."
+    },
+    {
+      "field": "access",
+      "url": "https://seranking.com/api.html",
+      "snippet": "API access comes with any SE Ranking plan (Core at $129/mo and Growth at $279/mo). You can even test it in the free trial account."
+    },
+    {
+      "field": "mcp",
+      "url": "https://seranking.com/api/integrations/mcp",
+      "snippet": "The SE Ranking MCP server connects SE Ranking\u2019s SEO data to AI assistants like Claude, ChatGPT, and Gemini."
+    },
+    {
+      "field": "auth",
+      "url": "https://apis.io/security/se-ranking/se-ranking-authentication",
+      "snippet": "SE Ranking secures its APIs with apiKey and oauth2 across 4 declared security schemes, as derived from its OpenAPI definitions."
+    }
+  ],
+  "confidence": 0.9,
+  "needs_human": false,
+  "agent_notes": "SE Ranking provides robust REST endpoints for SEO and AI visibility analytics along with an official MCP server."
+}

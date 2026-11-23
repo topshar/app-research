@@ -1,0 +1,46 @@
+{
+  "app": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "one_liner": "Team collaboration software providing instant messaging, audio/video calls, and developer platforms with REST APIs and MCP support.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can register applications in the Zoho API console for free self-serve credentials.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://www.zoho.com/cliq/mcp-server.html",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Zoho Cliq provides self-serve OAuth credentials, extensive REST APIs, webhooks, and official Model Context Protocol (MCP) server integration.",
+  "docs_url": "https://www.zoho.com/cliq/help/restapi",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth",
+      "snippet": "Zoho Cliq secures its APIs with oauth2 across 2 declared security schemes, as derived from its OpenAPI definitions."
+    },
+    {
+      "field": "auth",
+      "url": "https://apis.io/security/zoho-cliq/zoho-cliq-authentication",
+      "snippet": "Zoho Cliq secures its APIs with oauth2 across 2 declared security schemes"
+    },
+    {
+      "field": "mcp",
+      "url": "https://www.zoho.com/cliq/mcp-server.html",
+      "snippet": "With Zoho Cliq's Model Context Protocol (MCP), AI in Cliq goes beyond conversation by letting your AI agent take action"
+    },
+    {
+      "field": "webhooks",
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth",
+      "snippet": "Grants permission to post messages directly to conversations using incoming webhooks."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_evidence_for:access]"
+}

@@ -1,0 +1,44 @@
+{
+  "app": "Vonage",
+  "category": "Communications and Messaging",
+  "one_liner": "Cloud communications APIs for SMS, voice, video, messaging, and authentication features.",
+  "auth_methods": [
+    "api_key",
+    "bearer_token",
+    "jwt",
+    "basic"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can sign up for a free account immediately with free credit and no credit card required.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/Vonage/vonage-mcp-server-documentation",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Vonage offers fully documented REST APIs with self-service developer credentials and an official Model Context Protocol (MCP) server.",
+  "docs_url": "https://developer.vonage.com",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://developer.vonage.com/verify/concepts/authentication",
+      "snippet": "Basic Authentication sends your API Key and API Secret Base64-encoded in the Authorization header. You can find these credentials in your API settings in the Vonage Dashboard."
+    },
+    {
+      "field": "access",
+      "url": "https://www.vonage.com/communications-apis/pricing",
+      "snippet": "Start developing now with free credit. No credit card required."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/Vonage/vonage-mcp-server-documentation",
+      "snippet": "An MCP (Model Context Protocol) server that provides AI assistants with access to Vonage API documentation, code snippets, tutorials, and troubleshooting resources."
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

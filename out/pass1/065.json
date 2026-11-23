@@ -1,0 +1,49 @@
+{
+  "app": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "An open-source backend-as-a-service providing a Postgres database, authentication, storage, and real-time subscription APIs.",
+  "auth_methods": [
+    "api_key",
+    "bearer_token",
+    "jwt",
+    "oauth2"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Developers can sign up for a free tier and obtain project credentials immediately without speaking to sales.",
+  "api_type": "mixed",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/supabase/mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Supabase provides self-serve credentials on a free tier, comprehensive API documentation, and an official MCP server.",
+  "docs_url": "https://supabase.com/docs",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://apis.io/security/supabase/supabase-authentication",
+      "snippet": "Supabase secures its APIs with apiKey and http across 2 declared security schemes, as derived from its OpenAPI definitions."
+    },
+    {
+      "field": "access",
+      "url": "https://apis.io/plans/supabase/supabase-plans-pricing",
+      "snippet": "Free month $ 0 / month per project/org Includes:Unlimited API requests, 50,000 monthly active users, 500 MB database size"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://supabase.com/blog/supabase-is-now-an-official-claude-connector",
+      "snippet": "With the Supabase MCP server, you can execute SQL queries, modify schemas, deploy edge functions, manage branches"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+      "snippet": "The MCP server repository is available at github.com/supabase/mcp."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Supabase provides self-serve access, clear API key and OAuth documentation, and an official MCP server hosted on GitHub. [auto-flagged: no_official_source:auth, no_official_source:access]"
+}

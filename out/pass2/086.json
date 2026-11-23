@@ -1,0 +1,61 @@
+{
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "one_liner": "Cloud accounting software providing a REST API for managing invoices, customers, vendors, and financial data.",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "access": "approval_required",
+  "access_notes": "A free developer account allows immediate sandbox access, but production access requires an app assessment and approval process.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "app_review",
+  "verdict_reason": "Self-serve sandbox access is available, but moving to production requires going through Intuit's app assessment process.",
+  "docs_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://satvasolutions.com/blog/quickbooks-online-api-guide",
+      "snippet": "The QuickBooks Online API uses OAuth 2.0 Authorization Code flow exclusively. There are no API keys or basic auth options."
+    },
+    {
+      "field": "access",
+      "url": "https://truto.one/blog/how-much-does-the-quickbooks-api-cost-2026-pricing-rate-limits",
+      "snippet": "A QuickBooks developer account is free. You can sign up at the Intuit Developer Portal and get immediate sandbox access."
+    },
+    {
+      "field": "access",
+      "url": "https://www.apideck.com/blog/how-to-get-your-quickbooks-api-key",
+      "snippet": "Production: For real data, requires app assessment (yes, really)"
+    },
+    {
+      "field": "api_type",
+      "url": "https://satvasolutions.com/blog/quickbooks-online-api-guide",
+      "snippet": "Yes. QuickBooks Online provides a REST-based Accounting API that developers can use to read and write accounting data"
+    },
+    {
+      "field": "webhooks",
+      "url": "https://satvasolutions.com/blog/quickbooks-online-api-guide",
+      "snippet": "QuickBooks Online webhook notifications have moved to the CloudEvents format."
+    },
+    {
+      "field": "sandbox_or_test_env",
+      "url": "https://satvasolutions.com/blog/quickbooks-online-api-guide",
+      "snippet": "QuickBooks Sandbox: Testing integrations with sample company data"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+      "snippet": "Intuit publishes an open-source QuickBooks Online MCP server on GitHub"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:auth, no_official_source:access]"
+}

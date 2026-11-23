@@ -1,0 +1,52 @@
+{
+  "app": "Salesforce",
+  "category": "CRM and Sales",
+  "one_liner": "Enterprise CRM platform providing APIs for customer data management, workflow automation, and agentic integrations.",
+  "auth_methods": [
+    "oauth2",
+    "jwt"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "Developers can sign up for a free Developer Edition org or trial to configure external client apps and obtain OAuth credentials.",
+  "api_type": "mixed",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": false,
+  "sandbox_or_test_env": true,
+  "mcp_status": "official",
+  "mcp_url": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.html",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Salesforce offers self-serve developer editions and extensive REST/SOAP/MCP API documentation with standard OAuth 2.0 flows.",
+  "docs_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+      "snippet": "To implement this authorization, use either an external client app or a connected app and an OAuth 2.0 authorization flow."
+    },
+    {
+      "field": "access",
+      "url": "https://pipeline.zoominfo.com/sales/salesforce-api",
+      "snippet": "Pricing / access | Bundled with Salesforce licenses; free Developer Edition (15,000 calls/day); paid editions start at $25/user/month"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.html",
+      "snippet": "Use the Salesforce DX MCP Server and its tools to enter natural language prompts in your IDE to complete standard DX tasks"
+    },
+    {
+      "field": "webhooks",
+      "url": "https://pipeline.zoominfo.com/sales/salesforce-api",
+      "snippet": "Webhooks | No traditional outbound HTTP webhooks; event-driven via Pub/Sub API (gRPC) and Streaming API (CometD);"
+    },
+    {
+      "field": "sandbox_or_test_env",
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+      "snippet": "3. In the browser, log in to your Developer org or sandbox with your user’s credentials."
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_official_source:access]"
+}

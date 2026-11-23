@@ -1,0 +1,48 @@
+{
+  "app": "Aircall",
+  "category": "Communications and Messaging",
+  "one_liner": "Cloud-based phone system and call center software with an API for managing calls, users, contacts, and SMS.",
+  "auth_methods": [
+    "api_key",
+    "oauth2",
+    "basic"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "A paid Aircall customer account is required to generate API credentials from the dashboard settings.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/CassiaResearch/aircall-mcp-server",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "API is publicly documented and credentials can be self-generated, but an active paid Aircall subscription is required to access the API.",
+  "docs_url": "https://developer.aircall.io/",
+  "evidence": [
+    {
+      "field": "auth_methods",
+      "url": "https://developer.aircall.io/api-references",
+      "snippet": "OAuth ﹣ Technology Partners\nBasic Auth ﹣ Aircall customers"
+    },
+    {
+      "field": "access",
+      "url": "https://developer.aircall.io/api-references",
+      "snippet": "As an Aircall customer, an api_id and api_token are needed to use Aircall Public API: go to your Company's Settings page."
+    },
+    {
+      "field": "webhooks",
+      "url": "https://developer.aircall.io/api-references",
+      "snippet": "Webhook API overview"
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/CassiaResearch/aircall-mcp-server",
+      "snippet": "MCP server for the Aircall Public API — 83 tools for calls, transcriptions, AI insights, contacts, SMS, users, teams, and more."
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

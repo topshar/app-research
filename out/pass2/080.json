@@ -1,0 +1,42 @@
+{
+  "app": "Harvest",
+  "category": "Productivity and Project Management",
+  "one_liner": "Time tracking and project management software with a public REST API.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "trial_self_serve",
+  "access_notes": "Harvest offers a free 30-day self-serve trial after which a paid plan is required.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": null,
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "community",
+  "mcp_url": "https://github.com/taiste/harvest-mcp-server",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "API is publicly accessible via self-serve trial, but requires a paid plan after the 30-day trial period ends.",
+  "docs_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication",
+      "snippet": "A Personal Access Token which is tied directly to you and is the quickest way to start playing around with the API.\n Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations."
+    },
+    {
+      "field": "access",
+      "url": "https://harvestapp.com",
+      "snippet": "Free 30-day trial"
+    },
+    {
+      "field": "mcp",
+      "url": "https://github.com/taiste/harvest-mcp-server",
+      "snippet": "This MCP (Model Context Protocol) server provides integration with the Harvest time tracking and project management API."
+    }
+  ],
+  "confidence": 1.0,
+  "needs_human": false,
+  "agent_notes": ""
+}

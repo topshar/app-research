@@ -1,0 +1,48 @@
+{
+  "app": "Clay",
+  "category": "Data, SEO and Scraping",
+  "one_liner": "Infrastructure to get any data, run agentic workflows, and launch GTM plays.",
+  "auth_methods": [
+    "api_key",
+    "bearer_token",
+    "jwt"
+  ],
+  "access": "paid_plan_required",
+  "access_notes": "Webhooks are available on free tier, but HTTP API integrations require Growth ($495/mo) and the Enterprise People & Company API requires Enterprise.",
+  "api_type": "mixed",
+  "api_breadth": "medium",
+  "openapi_spec_url": null,
+  "webhooks": true,
+  "sandbox_or_test_env": false,
+  "mcp_status": "official",
+  "mcp_url": "https://www.clay.com/mcp",
+  "verdict": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "verdict_reason": "Clay does not offer a conventional REST API catalog for general developers; features are gated across plans (Growth for HTTP API integrations, Enterprise for direct lookups), though webhooks and the official MCP server are available.",
+  "docs_url": "https://university.clay.com/docs",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://university.clay.com/docs/http-api-integration-overview",
+      "snippet": "Key: Authorization\n Value: Bearer YOUR_API_TOKEN_HERE\n\nAPI key in header:\n\n Key: X-API-Key\n Value: YOUR_API_KEY_HERE"
+    },
+    {
+      "field": "mcp",
+      "url": "https://lagrowthmachine.com/clay-mcp",
+      "snippet": "Yes. Clay ships an official MCP server at with 7 tools to find and enrich contacts and companies and add data points."
+    },
+    {
+      "field": "access",
+      "url": "https://pipeline.zoominfo.com/sales/clay-api",
+      "snippet": "Webhooks available on free tier; HTTP API integrations on Growth ($495/mo) and above; Enterprise People & Company API on Enterprise only (custom pricing)"
+    },
+    {
+      "field": "api_type",
+      "url": "https://pipeline.zoominfo.com/sales/clay-api",
+      "snippet": "What Clay offers instead is a set of programmatic access points (inbound webhooks, an enterprise-only lookup API, MCP server connections, and an HTTP API tool for calling external services)"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "Clay's programmatic access is workflow-centric rather than a standard REST API. Inbound webhooks are free, HTTP API actions require Growth, and direct lookups require Enterprise. [auto-flagged: no_official_source:access, no_official_source:mcp]"
+}

@@ -1,0 +1,52 @@
+{
+  "app": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "one_liner": "Cloud platform for web applications, serverless computing, and deployments, offering a REST API and official MCP server.",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token"
+  ],
+  "access": "free_self_serve",
+  "access_notes": "Free self-serve account creation grants access to generate personal access tokens and use the API.",
+  "api_type": "rest",
+  "api_breadth": "broad",
+  "openapi_spec_url": "https://open-api.netlify.com",
+  "webhooks": null,
+  "sandbox_or_test_env": null,
+  "mcp_status": "official",
+  "mcp_url": "https://github.com/netlify/netlify-mcp",
+  "verdict": "ready",
+  "main_blocker": "none",
+  "verdict_reason": "Netlify provides a well-documented REST API, OpenAPI specifications, self-serve personal access tokens, OAuth2 support, and an official MCP server.",
+  "docs_url": "https://docs.netlify.com/api",
+  "evidence": [
+    {
+      "field": "auth",
+      "url": "https://docs.netlify.com/api",
+      "snippet": "Netlify uses OAuth2 for authentication. All requests must use HTTPS."
+    },
+    {
+      "field": "auth",
+      "url": "https://docs.netlify.com/api",
+      "snippet": "To authenticate API requests, include the token in the authorization header: Authorization: Bearer"
+    },
+    {
+      "field": "api_type",
+      "url": "https://docs.netlify.com/api",
+      "snippet": "Use the Netlify REST API to manage atomic deploys of your sites and apps"
+    },
+    {
+      "field": "openapi_spec_url",
+      "url": "https://docs.netlify.com/api",
+      "snippet": "You can browse the OpenAPI reference for the Netlify API to explore available endpoints."
+    },
+    {
+      "field": "mcp_status",
+      "url": "https://github.com/netlify/netlify-mcp",
+      "snippet": "GitHub - netlify/netlify-mcp: Netlify's Official MCP server"
+    }
+  ],
+  "confidence": 0.6,
+  "needs_human": true,
+  "agent_notes": "[auto-flagged: no_evidence_for:access]"
+}
